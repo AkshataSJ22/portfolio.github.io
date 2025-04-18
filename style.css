@@ -90,18 +90,20 @@ header {
 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+ text-align: center;
   color: #1f2937;
 }
 
 p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+ text-align: center;
  color: #4b5563;
 }
 
 .quote {
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 650;
  margin-top: auto;
     color: var(--accent-color);
     background-color: #fff5e1; /* Light highlight background */
