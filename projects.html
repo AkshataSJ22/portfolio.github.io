@@ -1,9 +1,9 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
   <title>Projects - Akshata</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -71,12 +71,12 @@
       font-weight: 600;
     }
 
-    .projects {
+    main {
       padding: 120px 20px 40px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       gap: 2rem;
     }
 
@@ -84,13 +84,13 @@
       background-color: var(--blush);
       padding: 20px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .project-box:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
     }
 
     .project-box h3 {
@@ -99,105 +99,42 @@
     }
 
     .project-box p {
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-  </style>
-</head>
-<body>
-
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">Akshata</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="company.html">Company</a></li>
-        <li><a href="connect.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <section class="projects">
-    <div class="project-box">
-      <h3>Portfolio Website</h3>
-      <p>A personal responsive website built using HTML, CSS, and JS to showcase my projects, skills, and resume in a professional format.</p>
-    </div>
-    <div class="project-box">
-      <h3>Banking App</h3>
-      <p>A React Native app to manage personal finances, send money, create saving plans, and track transaction history efficiently.</p>
-    </div>
-    <div class="project-box">
-      <h3>Brain Tumor Detection</h3>
-      <p>ML project using CNNs and medical image segmentation on the BraTS dataset to identify and localize brain tumors from MRI scans.</p>
-    </div>
-    <div class="project-box">
-      <h3>Stock Price Predictor</h3>
-      <p>Built using Python, Pandas, and Scikit-learn. It performs regression analysis to predict TATA stock price trends using historical data.</p>
-    </div>
-  </section>
-
-</body>
-</html> -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects - Akshata</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    main {
-      padding: 120px 20px 40px;
-      max-width: 1100px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-      gap: 30px;
-    }
-
-    .project-box {
-      background-color: var(--blush);
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .project-box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-    }
-
-    .project-box h3 {
-      color: var(--accent);
       margin-bottom: 10px;
+      line-height: 1.5;
     }
 
-    .project-box p {
-      margin-bottom: 10px;
-      font-size: 0.95rem;
+    .concept-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
     }
 
-    .concepts {
-      list-style: disc;
-      margin-left: 20px;
-    }
-
-    .concepts li {
+    .concept-button {
+      padding: 6px 14px;
+      font-size: 0.9rem;
+      background-color: var(--tan);
       color: var(--text-dark);
-      transition: color 0.3s ease;
-    }
-
-    .concepts li:hover {
-      color: var(--accent);
+      border: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
       cursor: default;
     }
+
+    .concept-button:hover {
+      background-color: #5e60ce;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
+
   <nav class="navbar">
     <div class="nav-container">
       <div class="logo">Akshata</div>
@@ -206,60 +143,68 @@
         <li><a href="about.html">About Me</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </div>
   </nav>
 
   <main>
+    <!-- Project 1 -->
     <div class="project-box">
       <h3>Banking App (Frontend)</h3>
       <p>A feature-rich banking app with daily savings, donation, and virtual pool bill splitting. Includes ticket booking for travel & stay.</p>
       <p>Developed to enhance financial planning and collaborative payments.</p>
-      <ul class="concepts">
-        <li>React Native</li>
-        <li>UI/UX Design</li>
-        <li>Component-based architecture</li>
-        <li>State Management</li>
-      </ul>
+      <div class="concept-buttons">
+        <button class="concept-button">React Native</button>
+        <button class="concept-button">UI/UX Design</button>
+        <button class="concept-button">Component-based architecture</button>
+        <button class="concept-button">State Management</button>
+      </div>
     </div>
 
+    <!-- Project 2 -->
     <div class="project-box">
       <h3>EV Charging App (Fullstack)</h3>
-      <p>Allows users to book EV slots and manage charging schedules with real-time updates using WebSockets.</p>
-      <p>Built to support EV infrastructure through efficient real-time slot allocation.</p>
-      <ul class="concepts">
-        <li>React Native</li>
-        <li>Node.js</li>
-        <li>WebSockets</li>
-        <li>MongoDB</li>
-      </ul>
+      <p>A full-stack app for EV charging station booking and slot management. Real-time updates using WebSockets.</p>
+      <p>Developed to manage efficient slot booking and live session handling.</p>
+      <div class="concept-buttons">
+        <button class="concept-button">React Native</button>
+        <button class="concept-button">Node.js</button>
+        <button class="concept-button">WebSockets</button>
+        <button class="concept-button">Real-time systems</button>
+      </div>
     </div>
 
+    <!-- Project 3 -->
     <div class="project-box">
-      <h3>Brain Tumor Detection (Few-Shot)</h3>
-      <p>Few-shot learning model trained to segment tumors in MRI scans with limited labeled data.</p>
-      <p>Designed to accelerate medical imaging analysis with minimal training samples.</p>
-      <ul class="concepts">
-        <li>Few-Shot Learning</li>
-        <li>VGG-16</li>
-        <li>Masked Average Pooling</li>
-        <li>Medical Image Segmentation</li>
-      </ul>
+      <h3>Brain Tumor Detection</h3>
+      <p>A few-shot learning model for brain tumor segmentation using limited MRI data. Improves detection accuracy with minimal samples.</p>
+      <p>Developed to assist radiologists in early diagnosis using minimal annotations.</p>
+      <div class="concept-buttons">
+        <button class="concept-button">Few-Shot Learning</button>
+        <button class="concept-button">CNNs</button>
+        <button class="concept-button">Medical Imaging</button>
+        <button class="concept-button">ResUNet</button>
+      </div>
     </div>
 
+    <!-- Project 4 -->
     <div class="project-box">
-      <h3>TNBC Metastatic Prediction</h3>
-      <p>Prediction model to estimate the metastatic period in Triple-Negative Breast Cancer cases using clinical and genomic data.</p>
-      <p>Created to support early intervention and personalized cancer prognosis.</p>
-      <ul class="concepts">
-        <li>Machine Learning</li>
-        <li>Data Analysis</li>
-        <li>Survival Models</li>
-        <li>Python & Pandas</li>
-      </ul>
+      <h3>TNBC Metastasis Prediction</h3>
+      <p>Predicting metastatic periods in Triple Negative Breast Cancer patients using clinical and imaging data.</p>
+      <p>Developed for aiding oncologists in treatment planning and prognosis.</p>
+      <div class="concept-buttons">
+        <button class="concept-button">Survival Analysis</button>
+        <button class="concept-button">Feature Engineering</button>
+        <button class="concept-button">ML Pipelines</button>
+        <button class="concept-button">Data Modeling</button>
+      </div>
     </div>
+
   </main>
+
 </body>
 </html>
+
 
