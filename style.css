@@ -68,20 +68,22 @@
 
 
 /* Header Styling */
+/* Align header content to top and quote to bottom */
 header {
-  height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(to right, var(--cream), var(--blush));
-  padding-top: 80px; /* to avoid overlap with fixed navbar */
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 100px; /* Avoid navbar overlap */
+  padding-bottom: 50px; /* Space for quote */
+  height: 100vh;
 }
 
 .header-content {
-  max-width: 600px;
-  margin: 0 auto;
+  text-align: center;
+  margin-top: 0;
 }
+
+
 
 
 
@@ -100,6 +102,7 @@ p {
 .quote {
     font-size: 1.5rem;
     font-weight: 600;
+ margin-top: auto;
     color: var(--accent-color);
     background-color: #fff5e1; /* Light highlight background */
     padding: 1rem;
