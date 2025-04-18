@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -140,4 +140,126 @@
   </section>
 
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Akshata</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      padding: 120px 20px 40px;
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 30px;
+    }
+
+    .project-box {
+      background-color: var(--blush);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-box h3 {
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .project-box p {
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+
+    .concepts {
+      list-style: disc;
+      margin-left: 20px;
+    }
+
+    .concepts li {
+      color: var(--text-dark);
+      transition: color 0.3s ease;
+    }
+
+    .concepts li:hover {
+      color: var(--accent);
+      cursor: default;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">Akshata</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="project-box">
+      <h3>Banking App (Frontend)</h3>
+      <p>A feature-rich banking app with daily savings, donation, and virtual pool bill splitting. Includes ticket booking for travel & stay.</p>
+      <p>Developed to enhance financial planning and collaborative payments.</p>
+      <ul class="concepts">
+        <li>React Native</li>
+        <li>UI/UX Design</li>
+        <li>Component-based architecture</li>
+        <li>State Management</li>
+      </ul>
+    </div>
+
+    <div class="project-box">
+      <h3>EV Charging App (Fullstack)</h3>
+      <p>Allows users to book EV slots and manage charging schedules with real-time updates using WebSockets.</p>
+      <p>Built to support EV infrastructure through efficient real-time slot allocation.</p>
+      <ul class="concepts">
+        <li>React Native</li>
+        <li>Node.js</li>
+        <li>WebSockets</li>
+        <li>MongoDB</li>
+      </ul>
+    </div>
+
+    <div class="project-box">
+      <h3>Brain Tumor Detection (Few-Shot)</h3>
+      <p>Few-shot learning model trained to segment tumors in MRI scans with limited labeled data.</p>
+      <p>Designed to accelerate medical imaging analysis with minimal training samples.</p>
+      <ul class="concepts">
+        <li>Few-Shot Learning</li>
+        <li>VGG-16</li>
+        <li>Masked Average Pooling</li>
+        <li>Medical Image Segmentation</li>
+      </ul>
+    </div>
+
+    <div class="project-box">
+      <h3>TNBC Metastatic Prediction</h3>
+      <p>Prediction model to estimate the metastatic period in Triple-Negative Breast Cancer cases using clinical and genomic data.</p>
+      <p>Created to support early intervention and personalized cancer prognosis.</p>
+      <ul class="concepts">
+        <li>Machine Learning</li>
+        <li>Data Analysis</li>
+        <li>Survival Models</li>
+        <li>Python & Pandas</li>
+      </ul>
+    </div>
+  </main>
+</body>
 </html>
+
