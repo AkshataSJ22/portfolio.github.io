@@ -71,31 +71,35 @@
       font-weight: 600;
     }
 
-    .company-section {
+    .section {
       padding: 7rem 2rem 4rem;
-      background-color: var(--cream);
-      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    .company-container {
+    .content-box {
       max-width: 900px;
       background: var(--blush);
       padding: 2rem;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .company-container h2 {
+    .content-box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
       font-size: 2rem;
       color: var(--accent);
       margin-bottom: 1rem;
       text-align: center;
     }
 
-    .company-container p {
+    p {
       font-size: 1.1rem;
       line-height: 1.8;
       color: var(--text-dark);
@@ -108,15 +112,15 @@
     }
 
     .use-case h3 {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       color: var(--accent);
+      text-decoration: underline;
       margin-bottom: 0.5rem;
     }
 
     .use-case p {
       font-size: 1rem;
       line-height: 1.6;
-      color: var(--text-dark);
     }
   </style>
 </head>
@@ -136,12 +140,20 @@
     </div>
   </nav>
 
-  <section class="company-section">
-    <div class="company-container">
+  <!-- Company Intro Section -->
+  <section class="section" id="intro">
+    <div class="content-box">
       <h2>About Microsoft</h2>
       <p>
-       Microsoft Corporation is a global technology powerhouse renowned for its innovations in software, cloud computing, artificial intelligence, and hardware. Microsoft’s core offerings include the Windows operating system, Microsoft 365 productivity suite, Azure cloud platform, and AI-powered solutions like GitHub Copilot and Microsoft Copilot. The company is also a major player in the gaming industry with Xbox and recent acquisitions like Activision Blizzard. Committed to responsible AI, sustainability, and digital inclusion, Microsoft continues to drive transformation across industries by empowering individuals and organizations with cutting-edge technology.
+        Microsoft Corporation is a global leader in software, cloud computing, artificial intelligence, and hardware. Microsoft delivers innovations like Windows, Azure, Microsoft 365, and GitHub Copilot, while promoting sustainability, digital inclusion, and responsible AI.
       </p>
+    </div>
+  </section>
+
+  <!-- Business Use Cases Section -->
+  <section class="section" id="usecases">
+    <div class="content-box">
+      <h2>Business Use Cases</h2>
 
       <div class="use-case">
         <h3>Copilot for Microsoft 365</h3>
@@ -177,9 +189,11 @@
           Combines AR, IoT, and digital twins to create virtual replicas of physical environments. Helps engineers remotely monitor and troubleshoot equipment, saving costs and time.
         </p>
       </div>
+
     </div>
   </section>
 
 </body>
 </html>
+
 
