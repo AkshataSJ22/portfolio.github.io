@@ -1,37 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Akshata's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Akshata's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #f6f4d2;
+      --peach: #faedcd;
+      --blush: #f2e9e4;
+      --tan: #e6ccb2;
+      --text-dark: #3b3b3b;
+      --accent: #8d6e63;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--cream);
+      color: var(--text-dark);
+    }
+
+    .navbar {
+      width: 100%;
+      background-color: var(--peach);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links a.active {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .about-section {
+      padding: 7rem 2rem 4rem;
+      background-color: var(--blush);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-container {
+      max-width: 800px;
+      background: var(--cream);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--text-dark);
+      margin-bottom: 1.2rem;
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <h2 class="logo">Akshata Joshi</h2>
-            <ul class="nav-links">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="about.html" class="active">About Me</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#company">Company</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <section class="about-section">
-        <div class="about-container">
-            <h2>About Me</h2>
-            <p>
-                I'm Akshata S Joshi, a passionate and driven third-year Computer Science student with a deep interest in web technologies, machine learning, and artificial intelligence. I love solving real-world problems through code and creating meaningful digital experiences. Whether it’s building responsive websites or exploring the power of AI in healthcare, I’m always eager to learn and innovate.
-            </p>
-            <p>
-                Apart from academics, I enjoy participating in hackathons, collaborating on open-source projects, and continuously expanding my technical and creative skill sets. My goal is to contribute to impactful projects that blend technology and purpose.
-            </p>
-        </div>
-    </section>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">Akshata</h2>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="about.html" class="active">About Me</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#company">Company</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="about-section">
+    <div class="about-container">
+      <h2>About Me</h2>
+      <p>
+        I'm Akshata S Joshi, a passionate and driven third-year Computer Science student with a deep interest in web technologies, machine learning, and artificial intelligence. I love solving real-world problems through code and creating meaningful digital experiences.
+      </p>
+      <p>
+        Whether it’s building responsive websites or exploring the power of AI in healthcare, I’m always eager to learn and innovate. Apart from academics, I enjoy participating in hackathons, collaborating on open-source projects, and continuously expanding my technical and creative skill sets.
+      </p>
+      <p>
+        My goal is to contribute to impactful projects that blend technology and purpose — and make the world just a little smarter, one line of code at a time.
+      </p>
+    </div>
+  </section>
+
 </body>
 </html>
+
