@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akshata's_Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Akshata's_Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    #intro-text {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    button {
+      background-color: var(--accent, #8d6e63);
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    button:hover {
+      background-color: #6b4f47;
+    }
+  </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <h2 class="logo">Akshata Joshi</h2>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="company.html">Buisness cases</a></li>
-                <li><a href="connect.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">Akshata Joshi</h2>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="company.html">Business Cases</a></li>
+        <li><a href="connect.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <header id="home">
-        <h1>Hello, I'm Akshata</h1>
-        <p>I am passionate about technology and problem-solving. Here's a showcase of my work:</p>
-        <blockquote class="quote">"Don't be a know-it-all, be a learn-it-all."</blockquote>
-    </header>
+  <header id="home">
+    <div class="header-content">
+      <p id="intro-text">Hello, I'm Akshata</p>
+      <p>Passionate about technology and problem-solving. Here's a showcase of my work:</p>
+      <button onclick="window.location.href='projects.html'">Projects</button>
+    </div>
+    <blockquote class="quote">"Don't be a know-it-all, be a learn-it-all."</blockquote>
+  </header>
 </body>
 </html>
-
