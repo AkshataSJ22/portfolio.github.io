@@ -13,6 +13,7 @@
       --tan: #e6ccb2;
       --text-dark: #3b3b3b;
       --accent: #8d6e63;
+      --card-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     }
 
     * {
@@ -71,8 +72,31 @@
       font-weight: 600;
     }
 
+    .header-section {
+      text-align: center;
+      padding-top: 6rem;
+      padding-bottom: 2rem;
+    }
+
+    .header-section h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+    }
+
+    .company-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .company-title img {
+      height: 50px;
+    }
+
     .section {
-      padding: 7rem 2rem 4rem;
+      padding: 0.5rem 2rem 3rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -81,15 +105,15 @@
     .content-box {
       max-width: 900px;
       background: var(--blush);
-      padding: 1rem;
+      padding: 2rem;
       border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      box-shadow: var(--card-shadow);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .content-box:hover {
       transform: scale(1.02);
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
@@ -122,6 +146,26 @@
       font-size: 1rem;
       line-height: 1.6;
     }
+
+    .checklist {
+      margin-top: 0.5rem;
+      padding-left: 1.2rem;
+    }
+
+    .checklist li {
+      list-style: none;
+      margin: 0.3rem 0;
+      position: relative;
+      padding-left: 1.2rem;
+    }
+
+    .checklist li::before {
+      content: "✔";
+      color: green;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
   </style>
 </head>
 <body>
@@ -140,12 +184,21 @@
     </div>
   </nav>
 
+  <!-- Header Section -->
+  <div class="header-section">
+    <h1>Domain</h1>
+    <div class="company-title">
+      <h2>Microsoft</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo" />
+    </div>
+  </div>
+
   <!-- Company Intro Section -->
   <section class="section" id="intro">
     <div class="content-box">
       <h2>About Microsoft</h2>
       <p>
-        Microsoft Corporation is a global leader in software, cloud computing, artificial intelligence, and hardware. Microsoft delivers innovations like Windows, Azure, Microsoft 365, and GitHub Copilot, while promoting sustainability, digital inclusion, and responsible AI.
+        Microsoft Corporation is a global leader in software, cloud computing, artificial intelligence, and hardware. Founded in 1975, it has become one of the world’s most influential tech companies. Under CEO Satya Nadella, Microsoft delivers innovations like Windows, Azure, Microsoft 365, and GitHub Copilot, while promoting sustainability, digital inclusion, and responsible AI.
       </p>
     </div>
   </section>
@@ -158,36 +211,61 @@
       <div class="use-case">
         <h3>Copilot for Microsoft 365</h3>
         <p>
-          An AI assistant integrated into Word, Excel, Outlook, and Teams. It helps users automate tasks like writing, summarizing, and analyzing, boosting overall productivity.
+          Helps users generate content, summarize meetings, analyze Excel data, and automate repetitive tasks.
         </p>
+        <ul class="checklist">
+          <li>Boosts ROI by saving hours in documentation and reporting</li>
+          <li>High customer satisfaction due to integration into daily tools</li>
+          <li>Rapid deployment across departments</li>
+        </ul>
       </div>
 
       <div class="use-case">
         <h3>Security Copilot</h3>
         <p>
-          AI-driven tool for cybersecurity teams that analyzes logs and threats to respond to risks faster. It enhances protection and reduces manual effort in threat detection.
+          Uses AI to quickly analyze logs and alerts, helping security teams detect and respond to cyber threats.
         </p>
+        <ul class="checklist">
+          <li>Improves threat detection time by up to 60%</li>
+          <li>Enhances security posture and reduces manual analysis</li>
+          <li>Highly scalable for enterprises</li>
+        </ul>
       </div>
 
       <div class="use-case">
         <h3>Dynamics 365 with AI</h3>
         <p>
-          Combines CRM and ERP with AI insights to help teams predict trends, automate reports, and make informed business decisions using real-time analytics.
+          Powers CRM and ERP with real-time AI insights, enabling smarter sales and financial decisions.
         </p>
+        <ul class="checklist">
+          <li>Increased sales forecasting accuracy</li>
+          <li>Automates financial report generation</li>
+          <li>Reduces time-to-market for marketing campaigns</li>
+        </ul>
       </div>
 
       <div class="use-case">
         <h3>Cloud Sovereignty Solutions</h3>
         <p>
-          Tailored cloud offerings that allow governments and regulated industries to maintain control of their data, meeting compliance and security needs while using Microsoft tech.
+          Offers regulated industries data control and compliance while leveraging Microsoft’s cloud services.
         </p>
+        <ul class="checklist">
+          <li>Meets local and global compliance regulations</li>
+          <li>Ensures secure and sovereign cloud infrastructure</li>
+          <li>Minimizes legal and security risks</li>
+        </ul>
       </div>
 
       <div class="use-case">
         <h3>Industrial Metaverse with HoloLens & IoT</h3>
         <p>
-          Combines AR, IoT, and digital twins to create virtual replicas of physical environments. Helps engineers remotely monitor and troubleshoot equipment, saving costs and time.
+          Combines AR and digital twins to help engineers monitor real-world factories remotely in real time.
         </p>
+        <ul class="checklist">
+          <li>Reduces downtime and operational costs</li>
+          <li>Enhances remote training and support efficiency</li>
+          <li>Improves decision-making with real-time insights</li>
+        </ul>
       </div>
 
     </div>
@@ -195,5 +273,6 @@
 
 </body>
 </html>
+
 
 
