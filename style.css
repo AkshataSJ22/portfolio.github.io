@@ -73,7 +73,7 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(to right, var(--blush), var(--peach));
+  background: linear-gradient(to right, var(--cream), var(--blush));
   padding-top: 80px; /* to avoid overlap with fixed navbar */
 }
 
