@@ -1,1 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Company | Akshata's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #d6ccc2;
+      --peach: #faedcd;
+      --blush: #f2e9e4;
+      --tan: #e6ccb2;
+      --text-dark: #3b3b3b;
+      --accent: #8d6e63;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--cream);
+      color: var(--text-dark);
+    }
+
+    .navbar {
+      width: 100%;
+      background-color: var(--peach);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links a.active {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .company-section {
+      padding: 7rem 2rem 4rem;
+      background-color: var(--cream);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .company-container {
+      max-width: 900px;
+      background: var(--blush);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .company-container h2 {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .company-container p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--text-dark);
+      margin-bottom: 1.2rem;
+      text-align: justify;
+    }
+
+    .use-case {
+      margin-top: 2rem;
+    }
+
+    .use-case h3 {
+      font-size: 1.4rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .use-case p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--text-dark);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">Akshata</h2>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="skills.html#skills">Skills</a></li>
+        <li><a href="projects.html#projects">Projects</a></li>
+        <li><a href="company.html#company" class="active">Company</a></li>
+        <li><a href="connect.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="company-section">
+    <div class="company-container">
+      <h2>About Microsoft</h2>
+      <p>
+       Microsoft Corporation is a global technology powerhouse renowned for its innovations in software, cloud computing, artificial intelligence, and hardware. Microsoft’s core offerings include the Windows operating system, Microsoft 365 productivity suite, Azure cloud platform, and AI-powered solutions like GitHub Copilot and Microsoft Copilot. The company is also a major player in the gaming industry with Xbox and recent acquisitions like Activision Blizzard. Committed to responsible AI, sustainability, and digital inclusion, Microsoft continues to drive transformation across industries by empowering individuals and organizations with cutting-edge technology.
+      </p>
+
+      <div class="use-case">
+        <h3>Copilot for Microsoft 365</h3>
+        <p>
+          An AI assistant integrated into Word, Excel, Outlook, and Teams. It helps users automate tasks like writing, summarizing, and analyzing, boosting overall productivity.
+        </p>
+      </div>
+
+      <div class="use-case">
+        <h3>Security Copilot</h3>
+        <p>
+          AI-driven tool for cybersecurity teams that analyzes logs and threats to respond to risks faster. It enhances protection and reduces manual effort in threat detection.
+        </p>
+      </div>
+
+      <div class="use-case">
+        <h3>Dynamics 365 with AI</h3>
+        <p>
+          Combines CRM and ERP with AI insights to help teams predict trends, automate reports, and make informed business decisions using real-time analytics.
+        </p>
+      </div>
+
+      <div class="use-case">
+        <h3>Cloud Sovereignty Solutions</h3>
+        <p>
+          Tailored cloud offerings that allow governments and regulated industries to maintain control of their data, meeting compliance and security needs while using Microsoft tech.
+        </p>
+      </div>
+
+      <div class="use-case">
+        <h3>Industrial Metaverse with HoloLens & IoT</h3>
+        <p>
+          Combines AR, IoT, and digital twins to create virtual replicas of physical environments. Helps engineers remotely monitor and troubleshoot equipment, saving costs and time.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
 
