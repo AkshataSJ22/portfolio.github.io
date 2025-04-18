@@ -89,16 +89,16 @@ header {
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: -0.5rem;
  text-align: center;
-  color: #1f2937;
+  color: var(--accent);
 }
 
 p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
  text-align: center;
- color: #4b5563;
+ color: var(--accent);
 }
 
 .quote {
@@ -108,9 +108,9 @@ p {
     color: var(--accent-color);
     background-color: #fff5e1; /* Light highlight background */
     padding: 1rem;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
     text-align: center;
 }
