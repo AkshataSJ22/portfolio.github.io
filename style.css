@@ -5,29 +5,31 @@
     box-sizing: border-box;
 }
 
-body {
+body, html {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f7fa;
     color: #333;
-    line-height: 1.6;
+    height: 100%;
 }
 
 /* Navbar Styling */
 .navbar {
+    width: 100%;
     background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 1000;
 }
 
 .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    padding: 1rem 2rem;
-    margin: 0 auto;
 }
 
 .logo {
@@ -39,7 +41,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .nav-links li a {
@@ -55,9 +57,18 @@ body {
 
 /* Header Styling */
 header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 6rem 2rem 3rem;
     background: linear-gradient(to right, #dbeafe, #f0f4ff);
+    padding-top: 80px; /* to avoid overlap with fixed navbar */
+}
+
+.header-content {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 header h1 {
@@ -70,4 +81,5 @@ header p {
     margin-top: 1rem;
     color: #4b5563;
 }
+
 
