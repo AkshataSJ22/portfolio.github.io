@@ -3,62 +3,369 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Akshata's_Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    #intro-text {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    button {
-      background-color: var(--accent, #8d6e63);
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      margin-top: 1rem;
-    }
-
-    button:hover {
-      background-color: #6b4f47;
-    }
-  </style>
+  <title>Akshata's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
-      <h2 class="logo">Akshata Joshi</h2>
+      <div class="logo">Akshata Joshi</div>
       <ul class="nav-links">
-        <li><a href="">Home</a></li>
-        <li><a href="about">About Me</a></li>
-        <li><a href="skills">Skills</a></li>
-        <li><a href="projects">Projects</a></li>
-        <li><a href="company">Business Cases</a></li>
-        <li><a href="connect">Contact</a></li>
+        <li><a href="#header" class="active">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#company">Business Cases</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
 
-  <header id="home">
-    <div class="header-content">
-    </br>
-    </br>
-      </br>
-    </br>
-      </br>
-    </br>
-      <p id="intro-text">Hello, I'm Akshata</p>
-      <p>Passionate about technology and problem-solving.</p></br>
-      <p>Here's a showcase of my work:</p>
-      <button onclick="window.location.href='projects.html'">Projects</button>
+  <!-- Header Section -->
+  <section id="header" class="header-section">
+    <header id="home">
+      <div class="header-content">
+        <p id="intro-text">Hello, I'm Akshata</p>
+        <p>Passionate about technology and problem-solving.</p><br>
+        <div class="work-btn-container">
+          <p id="para">Here's a showcase of my work:</p>
+          <button onclick="window.location.href='projects.html'">Projects</button>
+        </div>
+      </div>
+      <blockquote class="quote">"Don't be a know-it-all, be a learn-it-all."</blockquote>
+    </header>
+  </section>
+  
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-container">
+        <h2>About Me</h2>
+        <p>
+          I'm Akshata S Joshi, a passionate and driven third-year Computer Science student with a deep interest in web technologies, machine learning, and artificial intelligence. I love solving real-world problems through code and creating meaningful digital experiences.
+        </p>
+        <p>
+        I enjoy exploring innovative projects that blend academic knowledge with real-world applications. Always eager to learn, I thrive on improving my skills and staying up to date with the latest technologies in the field.  
+        </p>
+      </div>
+  
+      <div class="college-details">
+    <h3>Education</h3>
+    <div style="background-color: #f7f7f7; border-radius: 12px; padding: 20px; margin-top: 15px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);">
+      <h4 style="color: #3b3b3b; margin-bottom: 10px;">Bachelor of Engineering in Computer Science</h4>
+      <p style="color: #4a4a4a; margin-bottom: 5px;">KLE Technological University, Hubli, Karnataka, India</p>
+      <p style="color: #4a4a4a; margin-bottom: 5px;">Expected Graduation: 2026</p>
+      <p><strong>CGPA:</strong> 9.08</p>
     </div>
-    <blockquote class="quote">"Don't be a know-it-all, be a learn-it-all."</blockquote>
-  </header>
- 
+  </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <main>
+    <div class="skills-box">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React Native, Node.js, SQL</li>
+          <li>Python</li>
+          <li>Machine Learning</li>
+          <li>GitHub</li>
+        </ul>
+      </div>
+  
+      <div class="skills-box">
+        <h2>Soft Skills</h2>
+        <ul>
+          <li>Problem Solving</li>
+          <li>Teamwork & Collaboration</li>
+          <li>Communication</li>
+          <li>Time Management</li>
+          <li>Adaptability</li>
+          <li>Continuous learner</li>
+        </ul>
+      </div>
+    </main>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <main>
+        <!-- Project 1 -->
+        <div class="project-box">
+          <button class="github-link" onclick="window.open('https://github.com/Akshata-S-J/EV-charging-station-booking-system', '_blank')" title="View on GitHub">
+            <i class="fab fa-github"></i>
+          </button>
+          <h3>E-Bank App Frontend developer</h3>
+          <p>A feature-rich banking app with daily savings, donation, and virtual pool bill splitting. Includes ticket booking for travel & stay.</p>
+          <p>Developed to enhance financial planning and collaborative payments.</p>
+          <div class="concept-buttons">
+            <button class="concept-button">React Native</button>
+            <button class="concept-button">UI/UX Design</button>
+            <button class="concept-button">Component-based architecture</button>
+            <button class="concept-button">State Management</button>
+          </div>
+          <div class="project-actions">
+            <button class="view-project-button" onclick="window.open('https://github.com/shreya22jd/banking-app', '_blank')">View Project</button>
+          </div>
+        </div>
+    
+        <!-- Project 2 -->
+        <div class="project-box">
+          <button class="github-link" onclick="window.open('https://github.com/Akshata-S-J/mock-ev', '_blank')" title="View on GitHub">
+            <i class="fab fa-github"></i>
+          </button>
+          <h3>EV Charging App - Infosys intern</h3>
+          <p>A full-stack app for EV charging station booking and slot management. Real-time updates using WebSockets.</p>
+          <p>Developed to manage efficient slot booking and live session handling.</p>
+          <div class="concept-buttons">
+            <button class="concept-button">React Native</button>
+            <button class="concept-button">Node.js</button>
+            <button class="concept-button">WebSockets</button>
+            <button class="concept-button">Real-time systems</button>
+          </div>
+          <div class="project-actions">
+            <button class="view-project-button" onclick="window.open('https://github.com/Akshata-S-J/mock-ev', '_blank')">View Project</button>
+          </div>
+        </div>
+    
+        <!-- Project 3 -->
+        <div class="project-box">
+          <button class="github-link" onclick="window.open('https://github.com/Akshata-S-J/brain-tumor-detection', '_blank')" title="View on GitHub">
+            <i class="fab fa-github"></i>
+          </button>
+          <h3>Brain Tumor Detection</h3>
+          <p>A few-shot learning model for brain tumor segmentation using limited MRI data. Improves detection accuracy with minimal samples.</p>
+          <p>Developed to assist radiologists in early diagnosis using minimal annotations.</p>
+          <div class="concept-buttons">
+            <button class="concept-button">Few-Shot Learning</button>
+            <button class="concept-button">CNNs</button>
+            <button class="concept-button">Medical Imaging</button>
+            <button class="concept-button">ResUNet</button>
+          </div>
+          <div class="project-actions">
+            <button class="view-project-button" onclick="window.open('https://github.com/Akshata-S-J/brain-tumor-detection', '_blank')">View Project</button>
+          </div>
+        </div>
+    
+        <!-- Project 4 -->
+        <div class="project-box">
+          <button class="github-link" onclick="window.open('https://github.com/Akshata-S-J/wids', '_blank')" title="View on GitHub">
+            <i class="fab fa-github"></i>
+          </button>
+          <h3>TNBC Metastasis Prediction</h3>
+          <p>Predicting metastatic periods in Triple Negative Breast Cancer patients using clinical and imaging data.</p>
+          <p>Developed for aiding oncologists in treatment planning and prognosis.</p>
+          <div class="concept-buttons">
+            <button class="concept-button">Data Analysis</button>
+            <button class="concept-button">Data Visualisation</button>
+            <button class="concept-button">Machine learning</button>
+          </div>
+          <div class="project-actions">
+            <button class="view-project-button" onclick="window.open('https://github.com/Akshata-S-J/wids', '_blank')">View Project</button>
+          </div>
+        </div>
+      </main>
+  </section>
+
+  <!-- Company (Business Cases) Section -->
+  <section id="company" class="section">
+    <div class="content-box">
+      <h2>Business Use Cases - Google</h2>
+
+      <section class="section" id="usecases">
+        <div >
+          <h2>Business Use Cases</h2>
+      
+          <div class="use-case">
+            <h3>🗺️ Google Maps – Route Finding</h3>
+            <p>
+              Algorithms: 🚗 Dijkstra's, 🚀 A* Search<br>
+              Usage: Computes the fastest/shortest route between two places considering traffic.<br>
+              Benefits: Fast navigation, real-time rerouting.<br>
+              <strong>Complexity:</strong><br>
+              Dijkstra's → O((V + E) log V)<br>
+              A* → O(b^d)
+            </p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif" alt="Dijkstra Algorithm Animation" style="width:100%; max-width:400px; border-radius:8px; margin-bottom:15px;">
+
+          </div>
+      
+          <div class="use-case">
+            <h3>🎯 Google Ads – Ad Assignment</h3>
+            <p>
+              Algorithms: 🎯 Assignment Problem (Hungarian Algorithm), Auctions<br>
+              Usage: Matches ads to users based on bids, relevance, and budget.<br>
+              Benefits: Maximizes ad revenue and click-through rates.<br>
+              <strong>Complexity:</strong><br>
+              Hungarian → O(n³)
+            </p>
+          </div>
+      
+          <div class="use-case">
+            <h3>🔍 Google Search – Ranking and Retrieval</h3>
+            <p>
+              Algorithms: 📄 PageRank, 🤖 BERT<br>
+              Usage: PageRank ranks web pages based on links; BERT understands query meaning.<br>
+              Benefits: Relevant and high-quality search results.<br>
+              <strong>Complexity:</strong><br>
+              PageRank → O(N log N)<br>
+              BERT → O(n²) per query
+            </p>
+          </div>
+      
+          <div class="use-case">
+            <h3>✉️ Gmail – Email Search</h3>
+            <p>
+              Algorithms: 🌳 Trie, 📚 Inverted Index<br>
+              Usage: Fast email search, autocomplete contacts & subjects.<br>
+              Benefits: Quick lookup even in millions of emails.<br>
+              <strong>Complexity:</strong><br>
+              Trie Search → O(k)<br>
+              Inverted Index → O(1)
+            </p>
+            <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*aJxRGNYe52CE_bVRt0E1Eg.gif" style="width:100%; max-width:400px; border-radius:8px; margin-bottom:15px;">
+
+          </div>
+      
+          <div class="use-case">
+            <h3>🖼️ Google Photos – Image Search</h3>
+            <p>
+              Algorithms: 📍 k-d Trees, 🤖 CNN<br>
+              Usage: Finds similar photos based on face or object features.<br>
+              Benefits: Smart photo grouping and searching.<br>
+              <strong>Complexity:</strong><br>
+              k-d Tree Search → O(log n)
+            </p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/KDTree.gif" style="width:100%; max-width:400px; border-radius:8px; margin-bottom:15px;">
+
+          </div>
+      
+          <div class="use-case">
+            <h3>☁️ Google Drive – File Storage & Access</h3>
+            <p>
+              Algorithms: 🔐 Hash Tables, 🌳 Merkle Trees<br>
+              Usage: Organizes and verifies massive files securely.<br>
+              Benefits: Quick file access and secure data verification.<br>
+              <strong>Complexity:</strong><br>
+              Hash Lookup → O(1)<br>
+              Merkle Proof → O(log n)
+            </p>
+          </div>
+      
+          <div class="use-case">
+            <h3>🌎 Google Translate – Language Translation</h3>
+            <p>
+              Algorithms: 🔄 Dynamic Programming, 🤖 Neural Networks<br>
+              Usage: Translates sentences while preserving meaning and grammar.<br>
+              Benefits: Natural and context-aware translations.<br>
+              <strong>Complexity:</strong><br>
+              Dynamic Programming → O(n²)
+            </p>
+          </div>
+      
+          <div class="use-case">
+            <h3>📰 Google News – Content Grouping</h3>
+            <p>
+              Algorithms: 📈 Clustering, 🧠 NLP<br>
+              Usage: Groups similar news stories into topics.<br>
+              Benefits: Easier consumption of world news.<br>
+              <strong>Complexity:</strong><br>
+              Clustering → O(nki)
+            </p>
+          </div>
+      
+          <div class="use-case">
+            <h3>📅 Google Calendar – Smart Scheduling</h3>
+            <p>
+              Algorithms: 🕓 Interval Trees, 📋 Priority Queues<br>
+              Usage: Manages overlapping meetings and sends notifications.<br>
+              Benefits: Smooth conflict management.<br>
+              <strong>Complexity:</strong><br>
+              Interval Trees → O(log n)
+            </p>
+          </div>
+      
+          <div class="use-case">
+            <h3>🌐 Google Chrome – Faster Browsing</h3>
+            <p>
+              Algorithms: 🧹 LRU Caches, 🚥 Bloom Filters<br>
+              Usage: Caches visited pages, checks unsafe URLs instantly.<br>
+              Benefits: Speeds up browsing, protects from phishing.<br>
+              <strong>Complexity:</strong><br>
+              Cache/Bloom Lookup → O(1)
+            </p>
+          </div>
+          <div class="use-case">
+            <h3>📧 Gmail – Thread Management</h3>
+            <iframe 
+  src="https://visualgo.net/en/segmenttree?mode=min&create=71%2C44%2C49%2C6%2C13%2C20&state=%2C6_3%2C44_1%2C6_3%2C44_1%2C49_2%2C6_3%2C20_5%2C71_0%2C44_1%2C%2C%2C6_3%2C13_4%2C%2C" 
+  width="100%" 
+  height="400px" 
+  style="border:2px solid #ccc; border-radius:8px; margin-top:15px;"
+  allowfullscreen
+  loading="lazy">
+</iframe>
+
+            <p>
+              Algorithms: 📈 Skip List, 🌲 Segment Tree<br>
+              Usage: Fast search and retrieval of email conversations and range queries..<br>
+              Benefits: Speedy inbox loading and searching over huge mailbox data.<br>
+              <strong>Complexity:</strong><br>
+              Skip List → O(log n) search/update.
+            </p>
+          </div>
+      
+        </div>
+      </section>
+      
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <main>
+        <div class="contact-info">
+          <h2>My Contact Details</h2>
+          <p><strong>Email:</strong> joshiakshata2004@gmail.com</p>
+         <p><strong>Phone:</strong> 6361813137</p>
+        </div>
+    
+        <form class="contact-form" action="mailto:akshatajoshi2022@gmail.com" method="post" enctype="text/plain">
+          <h2>Connect With Me</h2>
+    
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="Name" required />
+    
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="Email" required />
+    
+          <label for="message">Message:</label>
+          <textarea id="message" name="Message" required></textarea>
+    
+          <button type="submit">Send</button>
+        </form>
+      </main>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-row">
+      <span class="footer-text">© 2024 Akshata Joshi. All rights reserved.</span>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/akshata-joshi-71430b2b5" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/" target="_blank">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        </a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
+
