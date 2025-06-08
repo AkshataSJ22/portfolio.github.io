@@ -1,10 +1,10 @@
 :root {
-  --cream: #d6ccc2;
-  --peach: #faedcd;
-  --blush: #f2e9e4;
-  --tan: #e6ccb2;
+  --cream: #F4F9F9;
+  --peach: #78d5fa;
+  --blush: #ddf1fa;
+  --tan: #4B97C9;
   --text-dark: #3b3b3b;
-  --accent: #8d6e63;
+  --accent: #1B4965;
   --card-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -28,7 +28,8 @@ body {
   top: 0;
   left: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
 }
 
 .nav-container {
@@ -41,119 +42,234 @@ body {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 700;
   color: var(--accent);
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .nav-links li a {
   text-decoration: none;
   color: var(--text-dark);
   font-weight: 500;
+  font-size: 1.05rem;
+  position: relative;
+  padding-bottom: 4px;
   transition: color 0.3s ease;
 }
 
 .nav-links li a:hover,
 .nav-links li a.active {
   color: var(--accent);
-  font-weight: 600;
 }
 
-/* Sections */
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--accent);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+  width: 100%;
+}
+
+/* Header Section */
 .header-section {
-    text-align: center;
-    padding-top: 6rem;
-    padding-bottom: 2rem;
-  }
-  
-  .header-section h1 {
-    font-size: 2.5rem;
-    color: var(--accent);
-  }
-  
-  .header-section p {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-  }
-  
-  #intro-text {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  button {
-    background-color: var(--accent, #8d6e63);
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #6b4f47;
-  }
-  
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 70px; /* Avoid navbar overlap */
-    padding-bottom: 50%; /* Space for quote */
-    height: 100vh;
-  }
-  
-  .header-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Aligns the content at the top */
-    align-items: center;
-    margin-top: 0;
-  }
-  
-  .work-btn-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem; /* Adds space between the text and the button */
-  }
-  
-  h1 {
-    font-size: 3rem;
-    margin-bottom: -0.5rem;
-    top: 20rem;
-    text-align: center;
-    color: var(--accent);
-  }
-  
-  p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    color: var(--accent);
-  }
-  
-  .quote {
-    font-size: 1.5rem;
-    font-weight: 650;
-    margin-top: auto;
-    color: var(--accent-color);
-    background-color: #fff5e1; /* Light highlight background */
-    padding: 0.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
+  background-color: var(--cream);
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#intro-text {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.header-content p {
+  font-size: 1.3rem;
+  color: var(--text-dark);
+}
+
+.work-btn-container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#para {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+button {
+  background-color: var(--accent);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: var(--card-shadow);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--tan);
+  transform: translateY(-2px);
+}
+
+/* Quote */
+.quote {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  font-style: italic;
+  background-color: #ddf1fa;
+  padding: 1rem 2rem;
+  border-left: 5px solid var(--tan);
+  border-radius: 10px;
+  max-width: 600px;
+  color: var(--accent);
+  box-shadow: var(--card-shadow);
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: -0.5rem;
+  top: 20rem;
+  text-align: center;
+  color: var(--accent);
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--accent);
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+  color: var(--accent);
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--accent);
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.academic-section {
+  padding: 3rem 1rem;
+  background-color: var(--cream);
+}
+
+.academic-container {
+  max-width: 900px;
+  margin: 0 auto;
+  border-left: 8px solid;
+  border-image: linear-gradient(to bottom, var(--peach), var(--tan)) 1;
+  padding-left: 1.5rem;
+}
+
+.academic-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.details-box {
+  background-color: var(--blush);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: var(--card-shadow);
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1rem;
+}
+
+.left-column p {
+  font-weight: 600;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+}
+
+.right-column p {
+  color: var(--text-dark);
+  font-weight: 400;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: var(--peach);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+.amazon-logo {
+  width: 90px;
+  height: auto;
+  margin-top: -0.5rem;
+}
   /* about section */
   .about-section {
     padding: 7rem 2rem 4rem;
@@ -215,9 +331,36 @@ body {
         color: var(--text-dark);
         margin-bottom: 1rem;
       }
+.about-container,
+.college-details {
+  position: relative; /* Needed for pseudo-element */
+  max-width: 800px;
+  background: var(--blush);
+  padding: 2rem;
+  padding-left: 2.5rem; /* add spacing for the stripe */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Vertical gradient stripe on the left */
+.about-container::before,
+.college-details::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--peach), var(--tan));
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
 
 .section {
   padding: 2rem 2rem 3rem;
+  background-color: var(--cream);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,17 +368,19 @@ body {
 /* skills section */
 main {
     padding: 120px 20px 40px;
-    max-width: 100px;
+    max-width: 1500px;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 2rem;
   }
 .skills-box {
+  width: 45%;
     background-color: var(--blush);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    max-width: 800px;
   }
 .skills-box:hover {
     transform: translateY(-5px);
@@ -251,6 +396,39 @@ main {
     line-height: 1.8;
   }
 
+
+  .skills-box,
+.project-box {
+  position: relative; /* Important for positioning ::before */
+  padding-left: 2rem; /* Leave space for the vertical line */
+  background: var(--blush); /* Optional: background to match design */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden; /* Ensures ::before doesn't overflow rounded corners */
+}
+
+/* Vertical gradient stripe on the left */
+.skills-box::before,
+.project-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--peach), var(--tan));
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  z-index: 1;
+}
+
+/* Keep content above the line */
+.skills-box > *,
+.project-box > * {
+  position: relative;
+  z-index: 2;
+}
+
   /* projects */
   main {
     padding: 120px 20px 40px;
@@ -260,15 +438,18 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
+.project-box {
+  background-color: var(--blush);
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 
-  .project-box {
-    background-color: var(--blush);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-  }
+  width: 1000px; /* Adjust as needed */
+  margin: 0 auto; /* Centers the box horizontally */
+}
+
 
   .project-box:hover {
     transform: translateY(-5px);
@@ -349,7 +530,7 @@ main {
     }
   }
 .content-box {
-  max-width: 900px;
+  max-width: 1200px;
   background: var(--blush);
   padding: 2rem;
   border-radius: 12px;
@@ -360,6 +541,37 @@ main {
 .content-box:hover {
   transform: scale(1.02);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+.content-box,
+.business-box {
+  position: relative;             /* So ::before is positioned relative to this */
+  padding-left: 2rem;             /* Prevent content from overlapping the line */
+  background: var(--blush);       /* Optional: background color */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;               /* Keeps the rounded corners clean */
+}
+
+/* Vertical gradient stripe on the left */
+.content-box::before,
+.business-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--peach), var(--tan));
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  z-index: 1;
+}
+
+/* Keep all child content above the stripe */
+.content-box > *,
+.business-box > * {
+  position: relative;
+  z-index: 2;
 }
 
 h2 {
@@ -376,6 +588,43 @@ p {
 }
 
 /* Use Cases */
+.business-box {
+  max-width: 1200px;
+  background: var(--blush);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.business-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 30px;
+}
+.product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.emoji {
+  font-size: 1.5em;
+  margin-right: 12px;
+}
+.info {
+  font-size: 1em;
+}
+.title {
+  font-weight: 600;
+}
+.desc {
+  color: #5f6368;
+  font-size: 0.9em;
+}
 .use-case {
   margin-top: 2rem;
 }
@@ -507,6 +756,65 @@ main {
     max-width: 100%;
   }
 }
+.contact-info,
+.contact-form {
+  position: relative;
+  padding-left: 2rem;
+  background: var(--blush);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem; /* spacing between info and form */
+  overflow: hidden;
+}
+
+/* Vertical gradient stripe */
+.contact-info::before,
+.contact-form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--peach), var(--tan));
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  z-index: 1;
+}
+
+/* Ensure content stays above the gradient line */
+.contact-info > *,
+.contact-form > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Optional: Styling form elements for consistency */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: var(--tan);
+  transition: 0.3s ease;
+}
+
 /* connect */
 .contact-info {
     flex: 1;
@@ -622,4 +930,227 @@ transition: transform 0.2s ease;
 
 .social-icons img:hover {
 transform: scale(1.1);
+}
+
+/* use cases */
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    h1, p {
+      text-align: center;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .use-case-card {
+      background: white;
+      width: 280px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      cursor: pointer;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .use-case-card:hover {
+      transform: scale(1.05);
+    }
+
+    .use-case-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .use-case-title {
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.popup-content {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px;
+  max-width: 90vw; /* responsive width */
+  width: 100%;
+  border-radius: 12px;
+  position: relative;
+  gap: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.popup-content img {
+  width: 45%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.popup-text {
+  width: 55%;
+  overflow-y: auto;
+}
+
+.popup-text h2 {
+  margin-top: 0;
+}
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 24px;
+      color: #999;
+      cursor: pointer;
+    }
+
+    .close-btn:hover {
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .popup-content {
+        flex-direction: column;
+      }
+      .popup-content img,
+      .popup-text {
+        width: 100%;
+      }
+    }
+ .summary-box {
+    background-color: var(--blush);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+    font-family: Arial, sans-serif;
+    color: var(--text-dark);
+  }
+
+  .summary-box h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+    color: var(--accent);
+  }
+
+  .summary-box table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px; /* space between rows */
+    font-size: 14px;
+  }
+
+  .summary-box th,
+  .summary-box td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .summary-box thead {
+    background-color: var(--cream);
+  }
+
+  .summary-box th {
+    background-color: var(--peach);
+    color: var(--accent);
+  }
+
+  .summary-box tbody tr {
+    background-color: #fff;
+  }
+    
+  .learning-box {
+  position: relative;             /* So ::before is positioned relative to this */
+  padding-left: 2rem;             /* Prevent content from overlapping the line */
+  background: var(--blush);       /* Optional: background color */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;               /* Keeps the rounded corners clean */
+}
+
+/* Vertical gradient stripe on the left */
+.learning-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--peach), var(--tan));
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  z-index: 1;
+}
+
+
+.design {
+  max-width: 1200px;
+  background: var(--blush);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.design:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+.design{
+  position: relative;             /* So ::before is positioned relative to this */
+  padding-left: 2rem;             /* Prevent content from overlapping the line */
+  background: var(--blush);       /* Optional: background color */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;               /* Keeps the rounded corners clean */
+}
+
+/* Vertical gradient stripe on the left */
+.design::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--peach), var(--tan));
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  z-index: 1;
+}
+
+/* Keep all child content above the stripe */
+.design > * {
+  position: relative;
+  z-index: 2;
 }
