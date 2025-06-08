@@ -1154,3 +1154,27 @@ body {
   position: relative;
   z-index: 2;
 }
+
+ .refer-box {
+  position: relative;             /* So ::before is positioned relative to this */
+  padding-left: 2rem;             /* Prevent content from overlapping the line */
+  background: var(--blush);       /* Optional: background color */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;               /* Keeps the rounded corners clean */
+}
+
+/* Vertical gradient stripe on the left */
+.refer-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--peach), var(--tan));
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  z-index: 1;
+}
+
