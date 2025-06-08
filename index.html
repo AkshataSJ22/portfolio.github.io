@@ -9,35 +9,39 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="logo">Akshata Joshi</div>
-      <ul class="nav-links">
-        <li><a href="#header" class="active">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#company">Business Cases</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Akshata Joshi</div>
+    <ul class="nav-links">
+      <li><a href="#header" class="active">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#company">Business Cases</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <!-- Header Section -->
-  <section id="header" class="header-section">
-    <header id="home">
-      <div class="header-content">
-        <p id="intro-text">Hello, I'm Akshata</p>
-        <p>Passionate about technology and problem-solving.</p><br>
-        <div class="work-btn-container">
-          <p id="para">Here's a showcase of my work:</p>
-          <button onclick="window.location.href='projects.html'">Projects</button>
-        </div>
+<!-- Header Section -->
+<section id="header" class="header-section">
+  <header>
+    <div class="header-content">
+      <h1 class="intro-text">Hello, I'm <span>Akshata</span></h1>
+      <p class="subtext">A passionate technologist driven by curiosity and problem-solving.</p>
+      <div class="work-btn-container">
+        <p class="highlight">Take a look at my resume:</p>
+        <a class="cta-btn" href="https://github.com/AkshataSJ22/portfolio.github.io/blob/main/resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
       </div>
-      <blockquote class="quote">"Don't be a know-it-all, be a learn-it-all."</blockquote>
-    </header>
-  </section>
+      <blockquote class="quote">"It always seems impossible until it’s done."</blockquote>
+    </div>
+  </header>
+</section>
+
+
+ 
+
   
 
   <!-- About Section -->
@@ -93,31 +97,15 @@
 
   <!-- Projects Section -->
   <section id="projects" class="section">
+    
     <main>
+      <h2>Projects</h2>
         <!-- Project 1 -->
-        <div class="project-box">
-          <button class="github-link" onclick="window.open('https://github.com/Akshata-S-J/EV-charging-station-booking-system', '_blank')" title="View on GitHub">
-            <i class="fab fa-github"></i>
-          </button>
-          <h3>E-Bank App Frontend developer</h3>
-          <p>A feature-rich banking app with daily savings, donation, and virtual pool bill splitting. Includes ticket booking for travel & stay.</p>
-          <p>Developed to enhance financial planning and collaborative payments.</p>
-          <div class="concept-buttons">
-            <button class="concept-button">React Native</button>
-            <button class="concept-button">UI/UX Design</button>
-            <button class="concept-button">Component-based architecture</button>
-            <button class="concept-button">State Management</button>
-          </div>
-          <div class="project-actions">
-            <button class="view-project-button" onclick="window.open('https://github.com/shreya22jd/banking-app', '_blank')">View Project</button>
-          </div>
-        </div>
+        
     
         <!-- Project 2 -->
         <div class="project-box">
-          <button class="github-link" onclick="window.open('https://github.com/Akshata-S-J/mock-ev', '_blank')" title="View on GitHub">
-            <i class="fab fa-github"></i>
-          </button>
+          
           <h3>EV Charging App - Infosys intern</h3>
           <p>A full-stack app for EV charging station booking and slot management. Real-time updates using WebSockets.</p>
           <p>Developed to manage efficient slot booking and live session handling.</p>
@@ -134,9 +122,7 @@
     
         <!-- Project 3 -->
         <div class="project-box">
-          <button class="github-link" onclick="window.open('https://github.com/Akshata-S-J/brain-tumor-detection', '_blank')" title="View on GitHub">
-            <i class="fab fa-github"></i>
-          </button>
+          
           <h3>Brain Tumor Detection</h3>
           <p>A few-shot learning model for brain tumor segmentation using limited MRI data. Improves detection accuracy with minimal samples.</p>
           <p>Developed to assist radiologists in early diagnosis using minimal annotations.</p>
@@ -150,12 +136,26 @@
             <button class="view-project-button" onclick="window.open('https://github.com/Akshata-S-J/brain-tumor-detection', '_blank')">View Project</button>
           </div>
         </div>
+
+         <div class="project-box">
+         
+          <h3>E-Bank App Frontend developer</h3>
+          <p>A feature-rich banking app with daily savings, donation, and virtual pool bill splitting. Includes ticket booking for travel & stay.</p>
+          <p>Developed to enhance financial planning and collaborative payments.</p>
+          <div class="concept-buttons">
+            <button class="concept-button">React Native</button>
+            <button class="concept-button">UI/UX Design</button>
+            <button class="concept-button">Component-based architecture</button>
+            <button class="concept-button">State Management</button>
+          </div>
+          <div class="project-actions">
+            <button class="view-project-button" onclick="window.open('https://github.com/Akshata-S-J/banking-app', '_blank')">View Project</button>
+          </div>
+        </div>
     
         <!-- Project 4 -->
         <div class="project-box">
-          <button class="github-link" onclick="window.open('https://github.com/Akshata-S-J/wids', '_blank')" title="View on GitHub">
-            <i class="fab fa-github"></i>
-          </button>
+         
           <h3>TNBC Metastasis Prediction</h3>
           <p>Predicting metastatic periods in Triple Negative Breast Cancer patients using clinical and imaging data.</p>
           <p>Developed for aiding oncologists in treatment planning and prognosis.</p>
@@ -174,156 +174,1843 @@
   <!-- Company (Business Cases) Section -->
   <section id="company" class="section">
     <div class="content-box">
-      <h2>Business Use Cases - Google</h2>
+      
+      <div style="text-align: center; padding: 20px;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
+             alt="google" 
+             style="width: 100%; max-width: 400px; border-radius: 8px;">
+      </div>
+      
+<p>Google remains one of the most influential and dominant tech companies globally, consistently ranked among the top in terms of market capitalization and innovation. It is a leader in search engine technology, online advertising through Google Ads, and mobile operating systems with Android. Google has also made major strides in artificial intelligence, cloud computing, and quantum computing. Notable achievements include the development of Google Assistant, breakthroughs with DeepMind’s AlphaFold, and advancements in generative AI through tools like Gemini.</p>
+<div class="container-2">
+  <h1>🚀 Google Products at a Glance</h1>
 
-      <section class="section" id="usecases">
-        <div >
-          <h2>Business Use Cases</h2>
-      
-          <div class="use-case">
-            <h3>🗺️ Google Maps – Route Finding</h3>
-            <p>
-              Algorithms: 🚗 Dijkstra's, 🚀 A* Search<br>
-              Usage: Computes the fastest/shortest route between two places considering traffic.<br>
-              Benefits: Fast navigation, real-time rerouting.<br>
-              <strong>Complexity:</strong><br>
-              Dijkstra's → O((V + E) log V)<br>
-              A* → O(b^d)
-            </p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif" alt="Dijkstra Algorithm Animation" style="width:100%; max-width:400px; border-radius:8px; margin-bottom:15px;">
+  <div class="product"><span class="emoji">🔍</span><div class="info"><div class="title">Google Search</div><div class="desc">Web search engine</div></div></div>
+  <div class="product"><span class="emoji">📧</span><div class="info"><div class="title">Gmail</div><div class="desc">Smart email platform</div></div></div>
+  <div class="product"><span class="emoji">📱</span><div class="info"><div class="title">Android</div><div class="desc">Mobile OS leader</div></div></div>
+  <div class="product"><span class="emoji">🗺️</span><div class="info"><div class="title">Google Maps</div><div class="desc">Navigation & location</div></div></div>
+  <div class="product"><span class="emoji">📹</span><div class="info"><div class="title">YouTube</div><div class="desc">Video sharing platform</div></div></div>
+  <div class="product"><span class="emoji">📂</span><div class="info"><div class="title">Google Drive</div><div class="desc">Cloud file storage</div></div></div>
+  <div class="product"><span class="emoji">📊</span><div class="info"><div class="title">Google Sheets</div><div class="desc">Online spreadsheets tool</div></div></div>
+  <div class="product"><span class="emoji">📝</span><div class="info"><div class="title">Google Docs</div><div class="desc">Online word editor</div></div></div>
+  <div class="product"><span class="emoji">📅</span><div class="info"><div class="title">Google Calendar</div><div class="desc">Smart event planner</div></div></div>
+  <div class="product"><span class="emoji">🎤</span><div class="info"><div class="title">Google Assistant</div><div class="desc">AI voice helper</div></div></div>
+  <div class="product"><span class="emoji">💬</span><div class="info"><div class="title">Google Chat</div><div class="desc">Team messaging app</div></div></div>
+  <div class="product"><span class="emoji">📞</span><div class="info"><div class="title">Google Meet</div><div class="desc">Video call service</div></div></div>
+  <div class="product"><span class="emoji">☁️</span><div class="info"><div class="title">Google Cloud</div><div class="desc">Enterprise cloud tools</div></div></div>
+  <div class="product"><span class="emoji">🧠</span><div class="info"><div class="title">Gemini / Bard AI</div><div class="desc">Conversational AI tool</div></div></div>
+  <div class="product"><span class="emoji">🔐</span><div class="info"><div class="title">Google Authenticator</div><div class="desc">2FA code generator</div></div></div>
+  <div class="product"><span class="emoji">🎮</span><div class="info"><div class="title">Google Play Games</div><div class="desc">Android gaming hub</div></div></div>
+  <div class="product"><span class="emoji">🏢</span><div class="info"><div class="title">Google Workspace</div><div class="desc">Business productivity suite</div></div></div>
+  <div class="product"><span class="emoji">🎓</span><div class="info"><div class="title">Google Scholar</div><div class="desc">Academic paper search</div></div></div>
+  <div class="product"><span class="emoji">🌐</span><div class="info"><div class="title">Google Chrome</div><div class="desc">Fast web browser</div></div></div>
+  <div class="product"><span class="emoji">🖼️</span><div class="info"><div class="title">Google Photos</div><div class="desc">Photo cloud backup</div></div></div>
 
-          </div>
-      
-          <div class="use-case">
-            <h3>🎯 Google Ads – Ad Assignment</h3>
-            <p>
-              Algorithms: 🎯 Assignment Problem (Hungarian Algorithm), Auctions<br>
-              Usage: Matches ads to users based on bids, relevance, and budget.<br>
-              Benefits: Maximizes ad revenue and click-through rates.<br>
-              <strong>Complexity:</strong><br>
-              Hungarian → O(n³)
-            </p>
-          </div>
-      
-          <div class="use-case">
-            <h3>🔍 Google Search – Ranking and Retrieval</h3>
-            <p>
-              Algorithms: 📄 PageRank, 🤖 BERT<br>
-              Usage: PageRank ranks web pages based on links; BERT understands query meaning.<br>
-              Benefits: Relevant and high-quality search results.<br>
-              <strong>Complexity:</strong><br>
-              PageRank → O(N log N)<br>
-              BERT → O(n²) per query
-            </p>
-          </div>
-      
-          <div class="use-case">
-            <h3>✉️ Gmail – Email Search</h3>
-            <p>
-              Algorithms: 🌳 Trie, 📚 Inverted Index<br>
-              Usage: Fast email search, autocomplete contacts & subjects.<br>
-              Benefits: Quick lookup even in millions of emails.<br>
-              <strong>Complexity:</strong><br>
-              Trie Search → O(k)<br>
-              Inverted Index → O(1)
-            </p>
-            <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*aJxRGNYe52CE_bVRt0E1Eg.gif" style="width:100%; max-width:400px; border-radius:8px; margin-bottom:15px;">
+</div>
+</div>
+ 
+</section>
+<section id="design" class="section">
+  <div class="design">
+<div class="model-section" style="text-align: center; padding: 2rem;">
+  <h2>YouTube System Architecture Model</h2>
+  
+  <img src="https://media.licdn.com/dms/image/v2/D5622AQHzlqA_EA2Spg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1705129075952?e=2147483647&v=beta&t=wuV-Zkasi4_MuSJjjT_pmbNs2BadkgPYtBjX94WtinU" 
+       alt="YouTube System Model" 
+       style="max-width: 90%; width: 500px; border-radius: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
 
-          </div>
-      
-          <div class="use-case">
-            <h3>🖼️ Google Photos – Image Search</h3>
-            <p>
-              Algorithms: 📍 k-d Trees, 🤖 CNN<br>
-              Usage: Finds similar photos based on face or object features.<br>
-              Benefits: Smart photo grouping and searching.<br>
-              <strong>Complexity:</strong><br>
-              k-d Tree Search → O(log n)
-            </p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/KDTree.gif" style="width:100%; max-width:400px; border-radius:8px; margin-bottom:15px;">
+  <p class="model-description" style="font-size: 1rem; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto;">
+    This YouTube system architecture diagram illustrates how the platform handles massive user traffic and video content. 
+    Videos uploaded by users are first stored in a Blob Storage system, then processed by a Transcoder to generate multiple quality formats. 
+    Metadata such as video titles, tags, and view counts are stored in fast-access NoSQL databases for efficient UI rendering. 
+    Content Delivery Networks (CDNs) are used to ensure smooth and fast video streaming globally. 
+    The system also integrates recommendation engines and caching layers for personalized and low-latency playback experiences.
+  </p>
+</div>
 
-          </div>
-      
-          <div class="use-case">
-            <h3>☁️ Google Drive – File Storage & Access</h3>
-            <p>
-              Algorithms: 🔐 Hash Tables, 🌳 Merkle Trees<br>
-              Usage: Organizes and verifies massive files securely.<br>
-              Benefits: Quick file access and secure data verification.<br>
-              <strong>Complexity:</strong><br>
-              Hash Lookup → O(1)<br>
-              Merkle Proof → O(log n)
-            </p>
-          </div>
-      
-          <div class="use-case">
-            <h3>🌎 Google Translate – Language Translation</h3>
-            <p>
-              Algorithms: 🔄 Dynamic Programming, 🤖 Neural Networks<br>
-              Usage: Translates sentences while preserving meaning and grammar.<br>
-              Benefits: Natural and context-aware translations.<br>
-              <strong>Complexity:</strong><br>
-              Dynamic Programming → O(n²)
-            </p>
-          </div>
-      
-          <div class="use-case">
-            <h3>📰 Google News – Content Grouping</h3>
-            <p>
-              Algorithms: 📈 Clustering, 🧠 NLP<br>
-              Usage: Groups similar news stories into topics.<br>
-              Benefits: Easier consumption of world news.<br>
-              <strong>Complexity:</strong><br>
-              Clustering → O(nki)
-            </p>
-          </div>
-      
-          <div class="use-case">
-            <h3>📅 Google Calendar – Smart Scheduling</h3>
-            <p>
-              Algorithms: 🕓 Interval Trees, 📋 Priority Queues<br>
-              Usage: Manages overlapping meetings and sends notifications.<br>
-              Benefits: Smooth conflict management.<br>
-              <strong>Complexity:</strong><br>
-              Interval Trees → O(log n)
-            </p>
-          </div>
-      
-          <div class="use-case">
-            <h3>🌐 Google Chrome – Faster Browsing</h3>
-            <p>
-              Algorithms: 🧹 LRU Caches, 🚥 Bloom Filters<br>
-              Usage: Caches visited pages, checks unsafe URLs instantly.<br>
-              Benefits: Speeds up browsing, protects from phishing.<br>
-              <strong>Complexity:</strong><br>
-              Cache/Bloom Lookup → O(1)
-            </p>
-          </div>
-          <div class="use-case">
-            <h3>📧 Gmail – Thread Management</h3>
-            <iframe 
-  src="https://visualgo.net/en/segmenttree?mode=min&create=71%2C44%2C49%2C6%2C13%2C20&state=%2C6_3%2C44_1%2C6_3%2C44_1%2C49_2%2C6_3%2C20_5%2C71_0%2C44_1%2C%2C%2C6_3%2C13_4%2C%2C" 
-  width="100%" 
-  height="400px" 
-  style="border:2px solid #ccc; border-radius:8px; margin-top:15px;"
-  allowfullscreen
-  loading="lazy">
-</iframe>
+<div class="model-section" style="text-align: center; padding: 2rem;">
+  <h2>Google Maps System Architecture Model</h2>
+  
+  <img src="https://media.licdn.com/dms/image/v2/D4D22AQHusNlXqnXu7w/feedshare-shrink_800/B4DZOzwiywGUAg-/0/1733887679503?e=2147483647&v=beta&t=Yjs3J6vcD9R7Ayr_3vY5jPsnHFLkJLyakiyNrW6TEiE" 
+       alt="Google Map System Model" 
+       style="max-width: 90%; width: 500px; border-radius: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
 
-            <p>
-              Algorithms: 📈 Skip List, 🌲 Segment Tree<br>
-              Usage: Fast search and retrieval of email conversations and range queries..<br>
-              Benefits: Speedy inbox loading and searching over huge mailbox data.<br>
-              <strong>Complexity:</strong><br>
-              Skip List → O(log n) search/update.
-            </p>
-          </div>
+  <p class="model-description" style="font-size: 1rem; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto;">
+    The Google Maps architecture involves users interacting through services like navigation, route finding, and location search.
+    Requests are handled via load balancers and passed to a distributed search backend.
+    Core components include the Graph Processing Service, which uses a Graph Database for route and map data computation.
+    Data is ingested from third-party road providers via a Pub-Sub system (Kafka), helping build and update road graphs.
+    This scalable architecture ensures accurate routing, fast results, and real-time map updates for billions of users.
+  </p>
+</div>
+
+
+<div class="model-section" style="text-align: center; padding: 2rem;">
+  <h2>Google search engine System Architecture Model</h2>
+  
+  <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8d428e8b-48d0-4268-8a50-9781b20375f3_2000x2600.gif" 
+       alt="YouTube System Model" 
+       style="max-width: 90%; width: 500px; border-radius: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+
+  <p class="model-description" style="font-size: 1rem; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto;">
+  The Google Search Engine is the world’s most widely used search platform, designed to crawl, index, and rank billions of web pages. It uses advanced algorithms like PageRank, BERT, and RankBrain to deliver highly relevant results based on user queries. Google's infrastructure supports real-time indexing, semantic search, and personalized recommendations. Features like featured snippets, autocomplete, and voice search enhance usability and speed. Its continual evolution makes it central to the web experience for billions globally.   
+  </p>
+</div>
+
+<div class="model-section" style="text-align: center; padding: 2rem;">
+  <h2>Google Drive System Architecture Model</h2>
+  
+  <img src="https://miro.medium.com/v2/resize:fit:1400/0*YtPwu2gcRW-rIPli" 
+       alt="YouTube System Model" 
+       style="max-width: 90%; width: 500px; border-radius: 10px; box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+
+  <p class="model-description" style="font-size: 1rem; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto;">
+ Google Drive's system model is a cloud-based architecture that allows users to store, sync, and share files securely across devices. It uses distributed file storage (Colossus) and replication for high availability and durability. Metadata and file access control are managed via robust, scalable databases. Real-time collaboration is enabled through integration with apps like Google Docs and Sheets. Efficient caching and load balancing ensure smooth user experience across the globe.  </p>
+</div>
+</div>
+ 
+</section>
+<section class="section" id="usecases">
+        <div class="business-box">
+          <h2>GOOGLE USE CASES</h2>
       
-        </div>
-      </section>
-      
+          
+  <p>Click on any card to view details.</p>
+
+  
+  <div class="card-container">
+    <!-- Existing Use Cases -->
+
+
+    
+     <div class="use-case-card" onclick="openPopup('dag')">
+      <img src="https://images.klipfolio.com/website/public/2ab84d48-d60e-4e2a-91d5-ec3aa585dc13/google-sheets-blog-banner.png" alt="Google Ads- Phrase Match">
+      <div class="use-case-title">Google Sheets – Dependency Management</div>
     </div>
+
+
+    <div class="use-case-card" onclick="openPopup('googlecdn')">
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230409053305/2.png" alt="Google Maps">
+      <div class="use-case-title">Google CDN – Maximizing Video Flow</div>
+    </div>
+
+    <div class="use-case-card" onclick="openPopup('tcs')">
+      <img src="https://bagisto.com/wp-content/uploads/2018/09/multi-warehouse-inventory-system.png" alt="Google Maps">
+      <div class="use-case-title">Google Shopping – Multi-Warehouse Order Fulfillment</div>
+    </div>
+
+     <div class="use-case-card" onclick="openPopup('ranking')">
+      <img src="https://saynine.ai/wp-content/uploads/2025/01/tools-for-check-google-rankings.webp" alt="YouTube Recommendations">
+      <div class="use-case-title">Google – Real-Time Analytics & Ranking</div>
+    </div>
+
+    <div class="use-case-card" onclick="openPopup('tab')">
+      <img src="https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2020/12/google-chrome-search-tabs-hero.png" alt="Google Ads- Phrase Match">
+      <div class="use-case-title">Google Chrome – Tab Management</div>
+    </div>
+
+     <div class="use-case-card" onclick="openPopup('build-pipeline')">
+      <img src="https://static1.anpoimages.com/wordpress/wp-content/uploads/2022/06/what-is-google-play-hero.jpg" alt="YouTube Recommendations">
+      <div class="use-case-title">Google Play Store – App Build & Deployment Pipeline</div>
+    </div>
+
+    <div class="use-case-card" onclick="openPopup('translate-phrase')">
+      <img src="https://blog.lamphills.com/wp-content/uploads/2024/06/phrase-match-vs-broad-match.jpeg" alt="Google Ads- Phrase Match">
+      <div class="use-case-title">Google Ads – Phrase Match</div>
+    </div>
+
+    <div class="use-case-card" onclick="openPopup('youtube-recommend')">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxI7GtsPci7dgq8f4qz9dJqDpqLS0FQg2EvQ&s" alt="YouTube Recommendations">
+      <div class="use-case-title">YouTube – Video Recommendations</div>
+    </div>
+
+    
+
+    <div class="use-case-card" onclick="openPopup('youtube-history')">
+      <img src="https://media.idownloadblog.com/wp-content/uploads/2024/01/YouTube-History.png" alt="YouTube Watch History">
+      <div class="use-case-title">YouTube – Watch History</div>
+    </div>
+
+    <div class="use-case-card" onclick="openPopup('youtube-activity')">
+      <img src="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png" alt="YouTube Recent Activity" >
+      <div class="use-case-title">YouTube – Recent Activity Tracker</div>
+    </div>
+
+
+    <div class="use-case-card" onclick="openPopup('maps')">
+      <img src="https://sm.mashable.com/mashable_in/seo/default/maps_b482.jpg" alt="Google Maps">
+      <div class="use-case-title">Google Maps – Route Finding</div>
+    </div>
+
+
+    <div class="use-case-card" onclick="openPopup('gmail-spam')">
+      <img src="https://assets.mimecast.com/api/public/content/what-is-email-spam-filtering?v=5d0ded05" alt="Gmail Spam Filtering">
+      <div class="use-case-title">Gmail – Spam Filtering</div>
+    </div>
+
+    <!-- <div class="use-case-card" onclick="openPopup('photos-duplicates')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Hash_table_5_0_1_1_1_0_0_SP.svg" alt="Google Photos Duplicates">
+      <div class="use-case-title">Google Photos – Duplicates Detection</div>
+    </div> -->
+
+    <div class="use-case-card" onclick="openPopup('gmail-autocomplete')">
+      <img src="https://yamm.com/blog/content/images/size/w1200/2024/03/How-to-Use-Gmail-Autocomplete-and-Smart-Compose.jpg" alt="Gmail Autocomplete">
+      <div class="use-case-title">Gmail – Autocomplete</div>
+    </div>
+
+    <!-- <div class="use-case-card" onclick="openPopup('translate-phrase')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/KMP_algorithm.gif" alt="Google Translate Phrase Match">
+      <div class="use-case-title">Google Translate – Phrase Match</div>
+    </div> -->
+
+    <div class="use-case-card" onclick="openPopup('ads')">
+      <img src="data:image/png;base64,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" alt="Google Ads">
+      <div class="use-case-title">Google Ads – Ad Assignment</div>
+    </div>
+
+    <div class="use-case-card" onclick="openPopup('search')">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvRF-DKFAmCHeHRL2a_TzqdCPKhcSWpLDrhWPZq5-9QdWtl6uWxwvU7C892f3rjyncA54&usqp=CAU" alt="Google Search">
+      <div class="use-case-title">Google Search – Ranking and Retrieval</div>
+    </div>
+
+    
+
+    <!-- New Use Cases -->
+    <div class="use-case-card" onclick="openPopup('photos')">
+      <img src="https://play-lh.googleusercontent.com/ZyWNGIfzUyoajtFcD7NhMksHEZh37f-MkHVGr5Yfefa-IX7yj9SMfI82Z7a2wpdKCA" alt="Google Photos" >
+      <div class="use-case-title">Google Photos – Duplicate Detection</div>
+    </div>
+
+    <div class="use-case-card" onclick="openPopup('drive')">
+
+      <img src="https://filerev.com/wp-content/uploads/2023/02/Free-Google-Drive-Storage.jpg" alt="Google Drive">
+      <div class="use-case-title">Google Drive – File Storage & Access</div>
+    </div>
+
+    <div class="use-case-card" onclick="openPopup('translate')">
+      <img src="https://cdn.dribbble.com/userupload/41911692/file/original-4b9c7ca648c169e1dd33e20742104805.gif" alt="Google Translate">
+      <div class="use-case-title">Google Translate – Language Translation</div>
+    </div>
+
+   
+
+    <div class="use-case-card" onclick="openPopup('calendar')">
+      <img src="data:image/jpeg;base64,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" alt="Google Calendar">
+      <div class="use-case-title">Google Calendar – Smart Scheduling</div>
+    </div>
+
+
+    <div class="use-case-card" onclick="openPopup('gmail-thread')">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdQuLPP71H0vtus5vN5NEn7vIJKPuntGMsYg&s" alt="Gmail Thread Management">
+      <div class="use-case-title">Gmail – Thread Management</div>
+    </div>
+
+    
+
+
+    
+
+
+     
+
+    <div class="use-case-card" onclick="openPopup('contacts')">
+      <img src="https://www.oregon.gov/employ/Agency/PublishingImages/ContactUs-2024.jpg" alt="Google Ads- Phrase Match">
+      <div class="use-case-title">Google Contacts – Duplicate Detection</div>
+    </div>
+
+     <div class="use-case-card" onclick="openPopup('shopping')">
+      <img src="data:image/png;base64,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" alt="Google Ads- Phrase Match">
+      <div class="use-case-title">Google Shopping – Filters</div>
+    </div>
+
+    <div class="use-case-card" onclick="openPopup('googlecloud')">
+      <img src="data:image/png;base64,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" alt="Google Ads- Phrase Match">
+      <div class="use-case-title">Google Cloud – Load Balancing</div>
+    </div>
+
+     <div class="use-case-card" onclick="openPopup('kruskal')">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJGDpO6sIcSqR4Po6sca0rXZTwXXNNAEEobA&s" alt="Google Ads- Phrase Match">
+      <div class="use-case-title">Google Cloud – Network Design Optimization</div>
+    </div>
+
+
+    
+    <div class="use-case-card" onclick="openPopup('knapsack')">
+      <img src="https://miro.medium.com/v2/resize:fit:684/0*3dS6Jw8NzzSD-mn8.jpg" alt="Google Ads- Phrase Match" style="
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 12px auto;
+">
+      <div class="use-case-title">Resource Allocation in Cloud Computing</div>
+    </div>
+
+
+  </div>
+
+  <!-- POPUPS -->
+   
+
+
+
+<!-- POPUPS -->
+<!-- 1. Google Search - PageRank -->
+<div class="popup" id="popup-search">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Page_rank_animation.gif" alt="PageRank" 
+         style="width:400%; max-width:400px; border-radius:8px; margin-bottom:15px;">
+
+    <div class="popup-text" style="padding-left: 0; margin-left: -10px;">
+      <h2 style="margin-bottom: 10px;">Google Search – Ranking Results</h2>
+
+      <p>
+        Google Search retrieves and ranks results by first understanding the user’s query, then finding relevant web pages, and finally ordering them based on usefulness. This process involves several steps: crawling web pages, storing them efficiently using data structures like inverted indexes (which map keywords to pages), and ranking them using algorithms like PageRank<sup><a href="#ref1">[1]</a></sup>. During retrieval, the system quickly looks up the search terms in the inverted index to find matching documents. Then, ranking algorithms consider factors like keyword relevance, page authority, and user engagement<sup><a href="#ref2">[2]</a></sup>. To improve efficiency, hash maps enable fast lookup, heaps or priority queues help maintain top results, and graphs are used to analyze link structures among web pages.
+
+        PageRank is a ranking algorithm developed by Google to measure the importance of web pages based on their link structure<sup><a href="#ref1">[1]</a></sup>. It assumes that a page is important if many other important pages link to it. The idea is similar to academic citations: a research paper cited by many others is considered influential.
+
+        Each page is assigned a PageRank score, which is calculated iteratively. A page passes part of its score to the pages it links to, and over time, the scores converge. Pages with more incoming high-quality links get higher ranks.
+
+        Mathematically, it uses the power iteration method on a graph, where:
+
+        Nodes = web pages
+
+        Edges = hyperlinks
+
+        Damping factor (usually 0.85) accounts for the probability that a user randomly jumps to another page.
+      </p>
+
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK5ZvC40MEO6VRDVELk8Ds_ls32FzmtPBwk-VapHaGb0d1j5eQBKkUvlMfr8n8m1J8UaY&usqp=CAU" alt="PageRank" 
+           style="width:400%; max-width:400px; border-radius:8px; margin-bottom:15px;">
+
+      <p><strong>Time Complexity:</strong></p>
+      <ul>
+        <li><strong>Query Lookup:</strong> O(1) per keyword (via hash maps / tries)</li>
+        <li><strong>Top-K Ranking:</strong> O(N log K) using min-heap (N = matched docs, K = results)</li>
+        <li><strong>PageRank (Offline):</strong> O(I × (V + E))</li>
+      </ul>
+
+      <p><strong>Space Complexity:</strong></p>
+      <ul>
+        <li><strong>Inverted Index:</strong> O(T × D)</li>
+        <li><strong>PageRank Graph:</strong> O(V + E)</li>
+      </ul>
+
+      <hr>
+      <h3>References</h3>
+      <p id="ref1">[1] Brin, S., & Page, L. (1998). *The Anatomy of a Large-Scale Hypertextual Web Search Engine*. Computer Networks and ISDN Systems, 30(1-7), 107–117.</p>
+      <p id="ref2">[2] Manning, C. D., Raghavan, P., & Schütze, H. (2008). *Introduction to Information Retrieval*. Cambridge University Press.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 2. Google Maps - Shortest Path -->
+<div class="popup" id="popup-maps">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/Dijkstra_Animation.gif" 
+         alt="Dijkstra Algorithm"
+         style="width:400%; max-width:400px; border-radius:8px; margin-bottom:15px;">
+
+    <div class="popup-text">
+      <h2>Google Maps – Finding Shortest Routes</h2>
+      <p>
+        Google Maps is a powerful navigation tool used globally for finding locations, planning routes, and checking real-time traffic. It helps users travel efficiently by calculating optimal paths between source and destination using data like road networks, live traffic, road closures, and user preferences. Internally, Google Maps represents the road network as a weighted graph, where locations are nodes, roads are edges, and weights represent travel cost (distance or time). To find the shortest or fastest route, algorithms like Dijkstra's<sup><a href="#ref1">[1]</a></sup> and A*<sup><a href="#ref2">[2]</a></sup> are used.
+      </p>
+
+      <p>
+        Dijkstra's Algorithm explores the graph by expanding the node with the smallest cumulative cost from the start node. It guarantees the shortest path when all weights are non-negative.
+      </p>
+
+      <p>
+        A* improves on Dijkstra’s by introducing a heuristic function to guide the search toward the goal more quickly. The main formula used in A* is:
+      </p>
+
+      <p><code>f(n) = g(n) + h(n)</code></p>
+
+      <ul>
+        <li><strong>f(n)</strong>: Estimated total cost of the path through node n</li>
+        <li><strong>g(n)</strong>: Cost from the start node to n</li>
+        <li><strong>h(n)</strong>: Heuristic estimate from n to the goal (e.g., straight-line distance)</li>
+      </ul>
+
+      <p>This helps prioritize nodes that are closer to the goal, making the search faster.</p>
+
+      <h3>Time and Space Complexities</h3>
+      <ul>
+        <li><strong>Dijkstra’s Algorithm:</strong>
+          <ul>
+            <li>Time: O((V + E) log V) using a min-heap</li>
+            <li>Space: O(V) for distance table</li>
+          </ul>
+        </li>
+        <li><strong>A* Algorithm:</strong>
+          <ul>
+            <li>Time: O(E) in the best case, up to O((V + E) log V) in the worst</li>
+            <li>Space: O(V)</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Challenges</h3>
+      <ul>
+        <li><strong>Scalability:</strong> Handling billions of roads and users in real-time</li>
+        <li><strong>Dynamic Conditions:</strong> Roads change due to traffic, accidents, etc., requiring live re-routing</li>
+        <li><strong>Heuristic Accuracy:</strong> Poor heuristics in A* can lead to inefficient searches</li>
+        <li><strong>Resource Constraints:</strong> Keeping route searches fast on mobile devices</li>
+        <li><strong>Multiple Modes:</strong> Supporting cars, bikes, walking, transit, etc.</li>
+      </ul>
+
+      <hr>
+      <h3>References</h3>
+      <p id="ref1">[1] Dijkstra, E. W. (1959). A note on two problems in connexion with graphs. *Numerische Mathematik*, 1(1), 269–271.</p>
+      <p id="ref2">[2] Hart, P. E., Nilsson, N. J., & Raphael, B. (1968). A formal basis for the heuristic determination of minimum cost paths. *IEEE Transactions on Systems Science and Cybernetics*, 4(2), 100–107.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 3. Google Translate - Language Modeling -->
+<!-- Google Translate - DP Popup -->
+<div class="popup" id="popup-translate">
+  <div class="popup-content" style="max-height: 90vh; overflow-y: auto;">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <img src="https://www.lavivienpost.com/wp-content/uploads/2022/12/1Google-translate-cover1.jpg" 
+         alt="Dynamic Programming in Translation" 
+         style="display: block; max-width: 100%; height: auto; border-radius: 8px; margin: 0 auto 10px;">
+
+    <div class="popup-text">
+      <h2>Google Translate – Language Translation</h2>
+      <p>
+        <strong>Google Translate</strong> is a multilingual translation system that converts text from one language to another, using a blend of deep learning models and foundational algorithmic techniques. While today's translations are powered primarily by neural networks (especially Transformer models), traditional algorithms like <strong>dynamic programming (DP)</strong> still play a crucial role behind the scenes in tasks such as <em>sentence alignment, sequence decoding,</em> and <em>edit distance computation</em><sup><a href="#ref1">[1]</a></sup>.
+      
+        In earlier statistical machine translation (SMT), DP was used for aligning parallel corpora, such as English–French sentence pairs, using algorithms like <strong>Needleman-Wunsch</strong> or <strong>Levenshtein distance</strong> to calculate the optimal mapping between words or phrases.
+      </p>
+      <p>
+        Even in modern neural systems, DP principles are used in <strong>beam search decoding</strong>, where the most probable sequence of translated tokens is selected efficiently, and in <strong>attention mechanisms</strong>, which depend on maintaining structured dependencies across time steps<sup><a href="#ref2">[2]</a></sup>. DP ensures that overlapping subproblems (such as repeated word patterns or partial phrase matches) are computed just once, enabling more efficient and context-aware translation outputs.
+      </p>
+
+      <h3>Time Complexity</h3>
+      <ul>
+        <li><strong>Edit Distance (Levenshtein):</strong> O(m × n)</li>
+        <li><strong>Beam Search Decoding:</strong> O(k × n), where <em>k</em> is beam width, <em>n</em> is sentence length</li>
+      </ul>
+
+      <h3>Space Complexity</h3>
+      <ul>
+        <li><strong>Edit Distance Table:</strong> O(m × n)</li>
+        <li><strong>Attention Alignment:</strong> O(n²) (for full attention in Transformers)</li>
+      </ul>
+
+      <h3>Challenges</h3>
+      <ul>
+        <li>High memory usage for long sequences</li>
+        <li>Real-time translation needs optimization beyond standard DP</li>
+        <li>Handling ambiguous or context-dependent phrases</li>
+        <li>Integrating with neural models adds implementation complexity</li>
+      </ul>
+
+      <h3 id="references">References</h3>
+      <ol>
+        <li id="ref1"><a href="https://blog.google/products/translate/google-translate-homonyms/" target="_blank">Google Translate and Homonyms – Google Blog</a></li>
+        <li id="ref2"><a href="https://research.google/blog/recent-advances-in-google-translate/" target="_blank">Recent Advances in Google Translate – Google Research Blog</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 4. Google Photos - Duplicate Detection -->
+<div class="popup" id="popup-photos">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/e/ea/KDTree.gif" 
+      alt="Perceptual Hash" 
+      style="height: 300px; width: auto; max-width: 100%; border-radius: 8px; margin-bottom: 10px;">
+
+    <div class="popup-text">
+      <h2>Google Photos – Duplicate Detection</h2>
+      <p>
+        Duplicate image detection is the process of identifying images that are exactly the same or visually very similar. Instead of comparing raw pixels (which is inefficient and sensitive to changes), images are converted into feature vectors using methods like color histograms, SIFT, or deep learning<sup><a href="#ref1">[1]</a></sup>. These vectors are then compared to detect duplicates based on similarity.
+        KD-Trees (K-Dimensional Trees) organize feature vectors in a binary tree structure by splitting the data along different dimensions. This allows efficient nearest-neighbor searches. When a new image is added, its feature vector is compared to those in the KD-tree. If a close match is found within a threshold, it is flagged as a duplicate<sup><a href="#ref2">[2]</a></sup>.
+      </p>
+
+      <p><strong>Efficiencies:</strong></p>
+      <ul>
+        <li>Time Complexity:
+          <ul>
+            <li>Building KD-Tree: O(n log n)</li>
+            <li>Query/Search: O(log n) (for low dimensions)</li>
+          </ul>
+        </li>
+        <li>Space Complexity: O(n)</li>
+        <li>Fast retrieval in low to moderate dimensions</li>
+        <li>Scalable to moderate-sized datasets</li>
+      </ul>
+
+      <p><strong>Challenges:</strong></p>
+      <ul>
+        <li>High dimensionality: KD-Trees degrade with many dimensions (e.g., >20)</li>
+        <li>Threshold tuning: Difficult to balance precision and recall</li>
+        <li>Visual variants: Small changes (crop, brightness) affect similarity</li>
+        <li>Scalability: Not suitable for extremely large datasets</li>
+        <li>Curse of dimensionality: Distance metrics become less effective in high dimensions</li>
+      </ul>
+
+      <a href="https://github.com/AkshataSJ22/portfolio.github.io/blob/main/K%20D%20tree.cpp" 
+         target="_blank" 
+         style="display: inline-block; padding: 10px 18px; background-color: #007bff; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; margin-bottom: 15px;">
+        View Code
+      </a>
+
+      <h3 id="references">References</h3>
+      <ol>
+        <li id="ref1"><a href="https://www.reddit.com/r/algorithms/comments/1fl71p9/algorithm_to_detect_duplicate_images/" target="_blank">
+          Reddit – Algorithm to Detect Duplicate Images
+        </a></li>
+        <li id="ref2"><a href="https://www.duplicatephotocleaner.com/how-to-manage-duplicates-in-google-photos" target="_blank">
+          Duplicate Photo Cleaner – Managing Duplicates in Google Photos
+        </a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+
+<!-- 5. Google Autocomplete -->
+<div class="popup" id="popup-gmail-autocomplete">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*aJxRGNYe52CE_bVRt0E1Eg.gif" 
+         alt="Trie" 
+         style="height: 300px; width: auto; max-width: 100%; border-radius: 8px; margin-bottom: 10px;">
+
+    <div class="popup-text">
+      <h2 style="color: #cc0000;">Google Search – Autocomplete</h2>
+      
+      <p>
+        Google Autocomplete works by predicting and suggesting search queries as users type. It leverages user input, historical data, and personalization signals to generate suggestions in real time.
+        Internally, it uses a <strong>trie (prefix tree)</strong> to efficiently store and retrieve query prefixes. Each node represents a character, forming valid prefixes along paths. As you type, the system traverses the trie to find suggestions that match<sup><a href="#ref1">[1]</a></sup>.
+      </p>
+
+      <p><strong>Time Complexity:</strong></p>
+      <ul>
+        <li><strong>Insertion:</strong> O(L) — L = length of the word</li>
+        <li><strong>Search / Prefix Matching:</strong> O(L)</li>
+        <li><strong>Auto-suggestions Retrieval:</strong> O(L + K log K) — using a min-heap or priority queue</li>
+      </ul>
+
+      <p><strong>Space Complexity:</strong> O(N × L × A), where:</p>
+      <ul>
+        <li>N = number of words</li>
+        <li>L = average word length</li>
+        <li>A = alphabet size (e.g., 26 for lowercase letters)</li>
+      </ul>
+
+      <p><strong>Challenges:</strong></p>
+      <ul>
+        <li><strong>High Memory Usage:</strong> Tries store multiple pointers per character, consuming significant memory</li>
+        <li><strong>Scalability:</strong> Managing real-time updates for billions of trending terms is complex</li>
+        <li><strong>Multilingual Support:</strong> Non-Latin scripts increase complexity and storage needs</li>
+        <li><strong>Dynamic Ranking:</strong> Popularity-based updates must be fast and efficient</li>
+        <li><strong>Pruning & Filtering:</strong> Removing outdated/inappropriate terms must not degrade performance</li>
+      </ul>
+
+      <a href="https://github.com/AkshataSJ22/portfolio.github.io/blob/main/trie.cpp" 
+         target="_blank" 
+         style="display: inline-block; padding: 10px 18px; background-color: #007bff; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; margin-bottom: 15px;">
+        View Code
+      </a>
+
+      <h3 id="references">References</h3>
+      <ol>
+        <li id="ref1">
+          <a href="https://blog.google/products/search/how-google-autocomplete-predictions-work/" target="_blank">
+            How Google Autocomplete Predictions Work – Google Blog
+          </a>
+        </li>
+        <li>
+          <a href="https://developers.google.com/custom-search/docs/tutorial/understanding-autocomplete" target="_blank">
+            Google Developers: Understanding Autocomplete in Custom Search
+          </a>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 6. Phrase Match in Search Ads -->
+<!-- Google Ads – Ad Assignment Popup -->
+<div class="popup" id="popup-ads">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*oOpfGffcWGpPyW-YKeAH4Q.gif" 
+         alt="Hungarian Algorithm" 
+         style="width:100%; max-width:500px; border-radius: 8px; margin-bottom: 10px;">
+
+    <div class="popup-text">
+      <h2> Google Ads – Ad Assignment</h2>
+      <p>
+        Google Ads is one of the world’s largest digital advertising platforms, where businesses bid to show their ads to users based on search queries, content, and behavior.
+        Every time a user performs a search or visits a partner site, Google must decide in <span class="highlight">real-time</span> which ads to show in limited slots.
+      </p>
+
+      <p>
+        This problem is modeled as a classic <strong>Assignment Problem</strong> — matching ads (based on bids, CTRs, and quality scores) to ad slots (with visibility).
+        Google constructs a matrix of potential ad-slot values and uses the <a href="https://en.wikipedia.org/wiki/Hungarian_algorithm" target="_blank"><strong>Hungarian Algorithm</strong></a> to find the combination that maximizes the total benefit.
+      </p>
+
+      <p>
+        Although actual systems consider more factors (budgets, user preferences, fairness policies), this core optimization allows for fast, near-optimal ad placements at scale.
+      </p>
+
+      <p>
+        <strong>Algorithm:</strong> Hungarian Method<br>
+        <strong>Time Complexity:</strong> O(n³)<br>
+        <strong>Space Complexity:</strong> O(n²)
+      </p>
+
+      <div class="challenges">
+        <strong>Challenges:</strong>
+        <ul>
+          <li><strong>Massive Scale</strong> – Millions of ads and slots</li>
+          <li><strong>Real-time Bidding</strong> – Decisions within milliseconds</li>
+          <li><strong>Dynamic Inputs</strong> – CTRs, bids, and quality scores change constantly</li>
+          <li><strong>Multiple Constraints</strong> – Budgets, targeting, fairness</li>
+          <li><strong>Approximation Trade-offs</strong> – Speed vs. optimality</li>
+        </ul>
+      </div>
+
+      <a href="https://github.com/AkshataSJ22/portfolio.github.io/blob/main/assignment-problem.cpp" 
+         target="_blank" 
+         style="display: inline-block; padding: 10px 18px; background-color: #007bff; color: white; border-radius: 6px; text-decoration: none; font-weight: bold;">
+        View Code
+      </a>
+
+      <p style="margin-top: 10px; font-size: 14px;">
+        Learn more:
+        <a href="https://byjus.com/maths/hungarian-method/" target="_blank">Byju's – Hungarian Method</a> |
+        <a href="https://en.wikipedia.org/wiki/Hungarian_algorithm" target="_blank">Wikipedia – Hungarian Algorithm</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<div class="popup" id="popup-translate-phrase">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    
+    <img src="https://miro.medium.com/v2/resize:fit:1400/1*DVV5l5d0dbuNukSF2-BbDw.gif" 
+         alt="Boyer Moore" 
+         style="width:100%; max-width:400px; border-radius:8px; margin-bottom:15px;">
+    
+    <div class="popup-text">
+      <h2>🔍 Google Ads – Phrase Match</h2>
+      <p>
+        Google Ads uses keyword matching types—exact, phrase, and broad match—to link user search queries to advertisers’ keywords. Phrase match ensures ads appear only when a query includes the entire phrase (or close variations) in the correct order<sup><a href="#ref1">[1]</a></sup>. This provides both relevance and control. At Google scale, handling billions of queries daily requires fast initial filtering before passing results to deep NLP and ML ranking systems. This is where classic pattern-matching algorithms like Boyer-Moore can be helpful in preprocessing steps, quickly eliminating non-matching queries from huge keyword lists<sup><a href="#ref2">[2]</a></sup>.
+      
+        The Boyer-Moore algorithm is efficient because it skips unnecessary comparisons using two key heuristics:
+      
+      <ul>
+        <li><strong>Bad Character Rule:</strong> Shifts the pattern to align the mismatched character with its last occurrence in the pattern.</li>
+        <li><strong>Good Suffix Rule:</strong> Shifts based on suffixes that already align with a previous match.</li>
+      </ul>
+      
+        These heuristics allow Boyer-Moore to skip large portions of text, making it much faster than naïve or even KMP methods. It’s ideal for exact or near-exact phrase matching in keyword databases—an essential step before ML-based ranking in Google Ads<sup><a href="#ref3">[3]</a></sup>.
+      </p>
+
+      <p> Efficiencies</p>
+      <ul>
+        <li><strong> Time Complexity:</strong> 
+          <ul>
+            <li>Best case: O(n / m)</li>
+            <li>Worst case: O(n + m)</li>
+            <li>Preprocessing: O(m + σ)</li>
+          </ul>
+        </li>
+        <li><strong> Space Complexity:</strong> O(m + σ), where σ is the alphabet size (e.g., 256 for ASCII)</li>
+        <li><strong> Skips large parts of text:</strong> More efficient than KMP or Naive approaches due to intelligent shifting</li>
+      </ul>
+
+      <p> Challenges</p>
+      <ul>
+        <li><strong> No semantic understanding:</strong> Can't match synonyms or related concepts</li>
+        <li><strong> Order-sensitive:</strong> Requires exact word order in the phrase</li>
+        <li><strong> Not adaptive:</strong> Doesn't learn from previous matches like ML models</li>
+        <li><strong> Literal matching only:</strong> Not useful for detecting user intent on its own</li>
+      </ul>
+
+         <a href="https://github.com/AkshataSJ22/portfolio.github.io/blob/main/boyer-moore.cpp" 
+   target="_blank" 
+   style="display: inline-block; padding: 10px 18px; background-color: #007bff; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; margin-bottom: 15px;">
+  View Code
+</a>
+
+ <p style="font-size: 0.9em; color: #555;">
+        Sources: 
+        <a href="https://support.google.com/google-ads/answer/7478529?hl=en" target="_blank">Google Ads Help</a>, 
+        <a href="https://zilliz.com/ai-faq/how-is-phrase-matching-implemented" target="_blank">Zilliz AI FAQ</a>, 
+        <a href="https://www.gtechme.com/insights/everything-you-should-know-about-google-phrase-march/" target="_blank">GTech Insights</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 8. Google Calendar – Smart Scheduling -->
+<div class="popup" id="popup-calendar">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    
+    <img src="https://www.researchgate.net/publication/339053410/figure/fig5/AS:873346090692609@1585233342335/nterval-Tree-representation-of-a-set-of-intervals.png" 
+         alt="Interval Tree" 
+         style="width:100%; max-width:500px; border-radius: 8px; margin-bottom: 15px;">
+    
+    <div class="popup-text">
+      <h2>Google Calendar – Smart Scheduling</h2>
+      <p>
+        Google Calendar’s smart scheduling feature simplifies meeting coordination by analyzing participant calendars to find mutually available time slots. It checks for overlaps in scheduled events, respects working hours, considers time zones, and ensures necessary resources (like meeting rooms) are available.
+      </p>
+
+      <p>
+        To support this at scale, Google uses data structures such as <a href="https://www.geeksforgeeks.org/interval-tree/" target="_blank"><strong>Interval Trees</strong></a>. These allow fast detection of time conflicts in <code>O(log n)</code> time per query, which is essential when scanning for overlapping meetings among thousands or millions of users.
+      </p>
+
+      <p>
+        Once available intervals are identified, smart algorithms (greedy, ranking heuristics) help prioritize optimal times based on earliest availability, fewest conflicts, and user-defined preferences.
+      </p>
+
+      <h3> Time & Space Complexity</h3>
+      <ul>
+        <li><strong>Build Interval Tree:</strong> 
+          <ul>
+            <li>Time: O(n log n)</li>
+            <li>Space: O(n)</li>
+          </ul>
+        </li>
+        <li><strong>Query Overlapping Events:</strong> O(log n + k), where <code>k</code> = overlapping intervals</li>
+        <li><strong>Find Common Slots for <em>m</em> Users:</strong> O(m log n + k)</li>
+        <li><strong>Rank Available Slots:</strong> O(r log r), where <code>r</code> = candidate slots</li>
+      </ul>
+
+      <h3> Key Challenges</h3>
+      <ul>
+        <li><strong>Scalability:</strong> Must support millions of users simultaneously</li>
+        <li><strong>Real-time Updates:</strong> Reflect changes instantly</li>
+        <li><strong>Time Zones:</strong> Seamless scheduling across regions</li>
+        <li><strong>Constraints:</strong> Honor work hours, preferences, and do-not-disturb settings</li>
+        <li><strong>Resource Management:</strong> Book rooms and shared equipment effectively</li>
+        <li><strong>Privacy:</strong> Ensure personal calendar info stays protected</li>
+      </ul>
+
+      <h3> References</h3>
+      <ul>
+        <li><a href="https://www.geeksforgeeks.org/interval-tree/" target="_blank">GeeksforGeeks – Interval Tree</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Interval_tree" target="_blank">Wikipedia – Interval Tree</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- 10. Gmail – Thread Management -->
+<!-- Skip List Popup -->
+<div class="popup" id="popup-gmail-thread">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <!-- Skip List Visualization -->
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Skip_list_add_element-en.gif" 
+      alt="Skip List Illustration" 
+      style="display: block; max-width: 100%; height: auto; border-radius: 8px; margin: 0 auto 10px;"
+    >
+
+    <div class="popup-text">
+      <h2>Gmail Thread Management – Using Skip Lists</h2>
+
+      <p>
+        Gmail organizes emails into conversation threads rather than treating them as isolated messages. Efficiently managing these threads requires a data structure that supports fast search, insert, and delete operations. One elegant solution is the <strong>Skip List</strong> — a probabilistic, multi-level linked list that offers performance similar to balanced binary trees, but is simpler to maintain and well-suited for concurrent access.
+      </p>
+
+      <p>
+        In Gmail’s context, each message in a thread can be a node in a skip list, ordered by timestamp or message ID. When a new email arrives (e.g., a reply or forward), it is inserted at the appropriate position in the thread. Thanks to the skip list’s hierarchical structure, this can be done in expected <code>O(log n)</code> time.
+      </p>
+
+      <p>
+        Unlike AVL or Red-Black Trees, skip lists don’t require complex rotations and are easier to parallelize. This makes them particularly effective in Gmail, where multiple operations — such as labeling, syncing, and spam filtering — may happen simultaneously across many threads.
+      </p>
+
+      <h3> Time Complexity</h3>
+      <ul>
+        <li><strong>Search:</strong> O(log n)</li>
+        <li><strong>Insertion:</strong> O(log n)</li>
+        <li><strong>Deletion:</strong> O(log n)</li>
+      </ul>
+      <h3> Space Complexity</h3>
+      <ul>
+        <li><strong>Total Storage:</strong> O(n) to O(n log n), depending on the number of levels</li>
+      </ul>
+
+      <h3> Key Challenges</h3>
+      <ul>
+        <li>Randomized level assignment may occasionally lead to suboptimal performance</li>
+        <li>Increased memory overhead from multiple forward pointers</li>
+        <li>More difficult to debug compared to simpler data structures</li>
+        <li>Requires careful locking for thread safety in concurrent environments</li>
+        <li>Edge-case handling for out-of-order or duplicate messages</li>
+      </ul>
+
+      <h3> Reference</h3>
+      <ul>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Skip_list" target="_blank">
+            Wikipedia: Skip List
+          </a>
+        </li>
+        <li>
+          <a href="https://developers.google.com/workspace/gmail" target="_blank">
+            Google Workspace Developer Docs
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- 11. YouTube – Video Recommendations -->
+<div class="popup" id="popup-youtube-recommend">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    
+    <!-- BFS Visualization -->
+    <img 
+      src="https://raw.githubusercontent.com/npretto/pathfinding/master/gif/bfs.gif" 
+      alt="Recommendation Algorithm (BFS)" 
+      style="width:100%; max-width:400px; border-radius:8px; margin-bottom:15px;"
+    >
+    
+    <div class="popup-text">
+      <h2>YouTube – Video Recommendations</h2>
+
+      <p>
+        YouTube’s recommendation system relies on both content-based filtering and collaborative filtering to provide personalized video suggestions. It tracks user behavior—watch history, likes, subscriptions, and searches—to build user profiles and infer preferences.
+      </p>
+
+      <p>
+        <strong>Collaborative filtering</strong> analyzes patterns among users to recommend videos liked by similar users. <strong>Content-based filtering</strong> identifies videos with similar metadata (tags, categories, descriptions) to those a user has previously enjoyed.
+      </p>
+
+      <p>
+        The system uses various data structures and algorithms:
+        <ul>
+          <li><strong>HashMaps:</strong> Store user-video interactions and metadata</li>
+          <li><strong>Graphs:</strong> Represent relationships between users and videos</li>
+          <li><strong>Matrices:</strong> Compute similarity scores between users or videos</li>
+        </ul>
+      </p>
+
+      <p>
+        Graph-based traversal like <strong>Breadth-First Search (BFS)</strong> can help discover indirect video relationships and explore a user’s recommendation neighborhood. For example, starting from a user's watched videos, BFS can suggest videos watched by similar users.
+      </p>
+
+      <h3>Complexity of BFS in User-Video Graph</h3>
+      <ul>
+        <li><strong>Time:</strong> O(V + E)</li>
+        <li><strong>Space (queue + visited):</strong> O(V)</li>
+        <li><strong>Graph storage:</strong> O(V + E)</li>
+      </ul>
+
+      <h3>Challenges</h3>
+      <ul>
+        <li>Scalability with billions of users and videos</li>
+        <li>Preventing echo chambers and filter bubbles</li>
+        <li>Ensuring low latency for real-time personalization</li>
+        <li>Keeping recommendations relevant and fresh</li>
+      </ul>
+
+      <!-- Collaborative Filtering Diagram -->
+      <img 
+        src="https://anubrain.com/wp-content/uploads/2023/05/collaborative-filtering-recommender-system.png" 
+        alt="Collaborative Filtering Diagram" 
+        style="width:100%; max-width:400px; border-radius:8px; margin-bottom:15px;"
+      >
+
+      <h3>References</h3>
+      <ul>
+        <li>
+          <a href="https://pyimagesearch.com/2023/09/25/youtube-video-recommendation-systems/" target="_blank">
+            PyImageSearch: Recommendation Systems
+          </a>
+        </li>
+        <li>
+          <a href="https://www.reddit.com/r/leetcode/comments/1hbm7dw/how_to_design_youtubes_recommendation_system_a/" target="_blank">
+            Reddit: Designing YouTube's Recommendation System
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- google drive -->
+<div class="popup" id="popup-drive">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <img 
+      src="https://miro.medium.com/v2/resize:fit:976/1*fyUhblDYx8sKh6cjFsa0Pg.gif" 
+      alt="File System Animation" 
+      style="width:100%; max-width:400px; border-radius:8px; margin-bottom:15px;"
+    >
+    
+    <div class="popup-text">
+      <h2>Google Drive – File Storage & Access</h2>
+
+      <p>
+        Google Drive is a cloud-based storage platform that enables users to store, organize, access, and share files online from any device. It supports real-time collaboration, version history, and tight integration with Google Workspace tools like Docs, Sheets, and Slides.
+      </p>
+
+      <p>
+        Under the hood, Google Drive organizes data using a hierarchical <strong>tree structure</strong>. Folders and files are nodes in this tree, where folders may contain child folders or files. Traversing the hierarchy is often done using Depth-First Search (DFS) or Breadth-First Search (BFS) to perform operations like search, move, or delete.
+      </p>
+
+      <p>
+        In parallel, a <strong>hash map</strong> is used to store metadata for fast access. Each file or folder is assigned a unique identifier (ID), which acts as the key in a hash table. This enables constant-time operations for metadata retrieval such as permissions, file types, last modified dates, or content indexing.
+      </p>
+
+      <h3>Time and Space Complexities</h3>
+      <ul>
+        <li><strong>Tree Traversal (DFS/BFS):</strong> O(V + E), where V = number of files/folders, E = connections</li>
+        <li><strong>Hash Map Lookup:</strong> O(1) average-case for metadata and permissions</li>
+        <li><strong>Total Space:</strong> O(V + E) for tree + O(N) for hash map (N = number of metadata entries)</li>
+      </ul>
+
+      <h3>Challenges</h3>
+      <ul>
+        <li>Efficient traversal of deeply nested folder trees for operations like search, move, or share</li>
+        <li>Handling permission inheritance and updates in a dynamic folder hierarchy</li>
+        <li>Maintaining consistency between the tree structure and hash-based metadata store</li>
+        <li>Scaling to billions of files while ensuring low latency for file access and indexing</li>
+        <li>Ensuring real-time synchronization across devices using event-driven updates and ID-based mapping</li>
+      </ul>
+
+      <h3>References</h3>
+      <ul>
+        <li>
+          <a href="https://medium.com/@kedar.vartak22/algorithms-and-data-structures-used-in-google-drive-dbd8c46e10e7" target="_blank">
+            Algorithms & Data Structures in Google Drive – Medium
+          </a>
+        </li>
+        <li>
+          <a href="https://research.google/blog/quick-access-in-drive-using-machine-learning-to-save-you-time/" target="_blank">
+            Quick Access in Drive Using ML – Google Research Blog
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 12. YouTube – Watch History -->
+<div class="popup" id="popup-youtube-history">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+ <img 
+  src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*IYmk2KnjtYu5gLihyDSTdg.gif" 
+  alt="Watch History" 
+  style="width:600px; height:350px; border-radius:8px; margin-bottom:15px;">
+
+    
+    <div class="popup-text">
+      <h2> YouTube – Watch History</h2>
+      <p>
+        YouTube’s watch history system works by recording user interactions whenever a video is played. When a user watches a video, details like the user ID, video ID, timestamp, and duration are captured and sent to the backend through API calls.
+      
+        This data is stored in scalable databases using a time-ordered structure per user. A caching layer like Redis is used, typically with <strong>Hash maps</strong> where each user ID maps to a list of recently watched videos. Hash maps provide constant-time access, making it efficient to fetch or update a user’s watch history.
+      </p>
+      <p><strong>Time Complexity:</strong></p>
+      <ul>
+        <li><strong>Insert/Update:</strong> O(1)</li>
+        <li><strong>Retrieve History:</strong> O(1)</li>
+        <li><strong>Delete Entry:</strong> O(1)</li>
+      </ul>
+
+      <p><strong>Space Complexity:</strong></p>
+      <ul>
+        <li><strong>O(n × k)</strong>, where:
+          <ul>
+            <li><strong>n</strong> = number of users</li>
+            <li><strong>k</strong> = number of videos stored per user</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p><strong> Challenges:</strong></p>
+      <ul>
+        <li><strong>Memory Usage:</strong> High RAM usage for large user bases</li>
+        <li><strong>Scalability:</strong> Requires sharding across servers</li>
+        <li><strong>Consistency:</strong> Cache-DB synchronization complexity</li>
+        <li><strong>Eviction Policies:</strong> Efficient pruning of old history needed</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 13. YouTube – Recent Activity Tracker -->
+<div class="popup" id="popup-youtube-activity">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+    <img src="https://miro.medium.com/v2/resize:fit:1400/1*3I0A6MhO3HXVWSaxCzTl5Q.gif" 
+     alt="Activity Tracker" 
+     style="width:400%; max-width:400px; border-radius:8px; margin-bottom:15px;">
+
+    <div class="popup-text">
+      <h2> YouTube – Recent Activity Tracker</h2>
+      <p>
+        YouTube's recent activity tracker records and manages user interactions such as watched videos, likes, comments, and searches to enhance personalization and user experience. Each action is logged with a timestamp and associated with a unique user ID or session. This data is stored in time-ordered structures and used to populate sections like "Watch History" or "Recently Watched."
+     
+        To manage the large volume of activity efficiently, YouTube applies a sliding window technique, which maintains only the most recent set of actions—either within a time limit (e.g., past 30 days) or count limit (e.g., last 100 actions). Using a combination of queues to preserve order and hash maps for quick access, this approach ensures fast updates and retrieval while keeping memory usage under control.
+      </p>
+
+      
+      <ul>
+         <p><strong>Time Complexity:</strong></p>
+          <ul>
+            <li><strong>Logging activity:</strong> O(1)</li>
+            <li><strong>Retrieving recent N actions:</strong> O(N)</li>
+            <li><strong>Sliding window update (with expiry/removal):</strong>O(1) (amortized)</li>
+          </ul>
+        </li>
+        <p><strong>Space Complexity:</strong> O(n × k), where:</p>
+          <ul>
+            <li>n = number of users</li>
+            <li>k = number of recent actions per user</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p> Challenges:</p>
+      <ul>
+        <li><strong>Scalability:</strong> Handling data from millions of users in real-time is resource-intensive.</li>
+        <li><strong>Real-time Updates:</strong> Syncing activity across multiple devices quickly is complex.</li>
+        <li><strong>Efficient Expiry:</strong> Removing outdated data without affecting performance is challenging.</li>
+        <li><strong>Data Consistency:</strong> Ensuring cached and permanent storage data remain in sync is hard to manage.</li>
+        <li><strong>Storage Cost:</strong> Logging frequent activity data requires efficient storage and memory optimization.</li>
+      </ul>
+
+       <a href="https://github.com/AkshataSJ22/portfolio.github.io/blob/main/sliding-window.cpp" 
+   target="_blank" 
+   style="display: inline-block; padding: 10px 18px; background-color: #007bff; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; margin-bottom: 15px;">
+  View Code
+</a>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 14. Gmail – Spam Filtering -->
+<div class="popup" id="popup-gmail-spam">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <div style="text-align:center;">
+      <img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fesf6ijt4qzdgakdg43ht.gif" 
+           alt="Spam Filter GIF" 
+           style="width:100%; max-width:400px; border-radius:8px; margin-bottom:15px;">
+      
+      <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1217bb68-9c1f-4d7d-a961-d1393df35c46_908x771.png" 
+           alt="Spam Diagram" 
+           style="width:100%; max-width:400px; border-radius:8px; margin-bottom:15px;">
+    </div>
+
+    <div class="popup-text">
+      <h2> Gmail – Spam Filtering</h2>
+       <p>
+        Gmail's spam filtering system uses a multi-layered approach that combines machine learning, rule-based heuristics, domain/IP reputation analysis, and user feedback to identify and block spam emails. The machine learning models are trained on massive datasets of spam and non-spam messages, allowing them to recognize patterns such as suspicious phrases, malicious links, and fraudulent headers. Additionally, Gmail applies rule-based checks for known spam indicators (like blacklisted domains or excessive link usage) and continuously adapts its filters based on user actions—such as marking an email as spam or not spam. These layers work together to ensure highly accurate detection, keeping unwanted messages out of user inboxes while minimizing false positives.
+      </p>
+
+      <p>
+        Bloom Filters can be integrated into spam filtering systems as a lightweight, space-efficient first-line defense to detect likely spam emails based on known spam keywords or sender domains. A Bloom Filter is a probabilistic data structure that uses multiple hash functions to map input elements (like spammy terms) to a fixed-size bit array. When an email arrives, its words are hashed and checked against the filter. If enough matches occur, the email is flagged as potential spam. The false positive probability (P) of a Bloom Filter can be estimated using the formula:
+      </p>
+
+      <p style="text-align:center; font-family: monospace; font-size: 16px;">
+        𝑃 ≈ (1 − e<sup>−k·n/m</sup>)<sup>k</sup>
+      </p>
+
+      <ul>
+        <li><strong>n</strong> = number of inserted elements (e.g., spam terms)</li>
+        <li><strong>m</strong> = size of the bit array</li>
+        <li><strong>k</strong> = number of hash functions used</li>
+      </ul>
+
+      <h3> Efficiencies</h3>
+      <ul>
+        <li><strong>Time Efficient:</strong> Lookup and insertion are both O(1).</li>
+        <li><strong>Space Efficient:</strong> Uses significantly less memory.</li>
+        <li><strong>Scalable:</strong> Handles millions of entries efficiently.</li>
+      </ul>
+
+      <h3> Challenges</h3>
+      <ul>
+        <li><strong>False Positives:</strong> May flag legitimate emails.</li>
+        <li><strong>No Deletion:</strong> Can't remove entries once added.</li>
+        <li><strong>No Frequency Tracking:</strong> Doesn’t track occurrence count.</li>
+        <li><strong>Fixed Size:</strong> Error rate increases with too many entries.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- gmail tab management -->
+<div class="popup" id="popup-tab">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <div style="text-align:center; padding: 0;">
+      <img src="https://scaler-topics-articles-md.s3.us-west-2.amazonaws.com/what-is-doubly-linked-list.gif" 
+           alt="Doubly Linked List GIF" 
+           style="width:100%; max-width:500px; border-radius:8px; margin-bottom:5px;">
+
+      <img src="https://miro.medium.com/v2/resize:fit:1400/0*vw8v87LK8oE-VEJf.gif" 
+           alt="Stack and Tab Switching Diagram" 
+           style="width:100%; max-width:500px; border-radius:8px; margin-bottom:10px;">
+    </div>
+
+    <div class="popup-text" style="padding: 0 20px;">
+      <h2 style="text-align: center;">Google Chrome – Tab Management</h2>
+      <p>
+        Google Chrome is a widely used web browser that allows users to open, close, and switch between multiple tabs, all while preserving their browsing history and session state. Efficient tab management is essential for user experience and performance, especially when users have dozens or even hundreds of tabs open.
+
+        To handle these operations smoothly, Chrome uses a combination of data structures such as Doubly Linked Lists, Stacks, and Hash Maps. Each open tab in Chrome can be thought of as a browser session containing its own navigation history (back/forward), which must be preserved and quickly accessible. Managing this navigation history is done using a Doubly Linked List, where each node represents a webpage, allowing Chrome to move backward and forward in constant time.
+
+        Additionally, Stacks are used to manage tab-level history—for example, the order in which tabs were accessed or closed. This enables features like "Reopen Closed Tab" or maintaining focus order when switching between tabs (similar to an LRU cache). Hash Maps are used to store and quickly access all currently open tabs by a unique tab ID or title, enabling O(1) retrieval, search, and switching.
+
+        This combination of data structures and algorithms ensures fast, efficient tab operations like opening a new tab, restoring sessions, going back/forward in page history, and handling large numbers of open tabs. Together, these data structures help Chrome balance speed, memory efficiency, and responsiveness in complex multi-tab environments.
+      </p>
+
+      <h3> Time Complexity</h3>
+      <ul>
+        <li><strong>Opening a New Tab:</strong> O(1) (using Hash Map to store tab reference)</li>
+        <li><strong>Switching Tabs:</strong> O(1) (direct access via Hash Map)</li>
+        <li><strong>Closing a Tab:</strong> O(1) (remove from Hash Map and Stack)</li>
+        <li><strong>Back/Forward Navigation:</strong> O(1) (move to previous/next node in Doubly Linked List)</li>
+        <li><strong>Reopening Closed Tabs:</strong> O(1) (pop from Stack)</li>
+      </ul>
+
+      <h3> Space Complexity</h3>
+      <ul>
+        <li><strong>Doubly Linked List for Page History:</strong> O(n) per tab, where n is number of visited pages</li>
+        <li><strong>Stack for Closed Tab History:</strong> O(m), where m is number of recently closed tabs stored</li>
+        <li><strong>Hash Map for Open Tabs:</strong> O(t), where t is total number of open tabs</li>
+      </ul>
+
+      <h3> Challenges</h3>
+      <ul>
+        <li><strong>Memory Overhead:</strong> Managing many tabs and their histories consumes memory</li>
+        <li><strong>State Sync:</strong> Syncing tab state across devices and processes</li>
+        <li><strong>Performance:</strong> Ensuring quick access with low CPU usage</li>
+        <li><strong>Crash Recovery:</strong> Handling crashes or tab restores reliably</li>
+        <li><strong>Security:</strong> Isolation of tab processes using sandboxing</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- contact -->
+  
+<div class="popup" id="popup-contacts">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    
+     
+     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/UnionFindKruskalDemo.gif" 
+     alt="Ford-Fulkerson Flow Network"
+     style="max-width: 100%; height: auto; display: block; margin: 10px auto; object-fit: contain;">
+
+
+    <div class="popup-text">
+      <h2>Google Contacts – Duplicate Detection</h2>
+      <p >
+        Google Contacts is a contact management service that allows users to store, edit, and organize contact information across their Google accounts. One of its key features is duplicate contact detection, which identifies and merges entries that represent the same person—such as when someone is saved with different spellings or email/phone variations.
+        
+        To perform this efficiently across millions of users and contacts, Google uses algorithms like Union-Find (Disjoint Set Union - DSU) and Hash Maps. The idea is to treat each contact as a node and group together those with shared attributes (like identical or similar names, email addresses, or phone numbers) into sets representing a single person.
+      
+        The Union-Find algorithm helps in merging these sets efficiently. Initially, each contact is its own set. As matching fields (like phone number or email) are compared, the algorithm "unions" contacts that are deemed duplicates. This helps in building clusters of duplicates dynamically. Hash Maps are used to map unique fields (like normalized phone numbers or emails) to their corresponding contact IDs, enabling fast lookups when comparing new or existing entries.
+        
+        The combination allows for quick detection, minimal redundancy, and scalable performance, even for users with thousands of contacts. After grouping, Google presents these matches to users for confirmation before merging.
+        Imagine a graph where each contact is a node, and edges represent potential duplicates. A Union-Find algorithm (or similar) could be used to group contacts into "sets" or "clusters" where each set represents a unique person with multiple contact entries. The "find" operation would determine which set a contact belongs to, and the "union" operation would merge sets if they represent the same person. 
+      </p>
+
+      <h3>Time Complexity</h3>
+      <ul>
+        <li><strong>Hashing contact fields (email, phone, etc.):</strong> O(n), where n is the number of contacts</li>
+        <li><strong>Union-Find operations:</strong> O(α(n)) per operation, where α(n) is the inverse Ackermann function (nearly constant)</li>
+        <li><strong>Overall duplicate detection:</strong> O(n · α(n)) — efficient for large datasets</li>
+      </ul>
+
+      <h3>Space Complexity</h3>
+      <ul>
+        <li><strong>Hash Map for field-to-contact ID mapping:</strong> O(n)</li>
+        <li><strong>Union-Find parent and rank arrays:</strong> O(n)</li>
+        <li><strong>Total Space:</strong> O(n), where n is the number of contacts</li>
+      </ul>
+
+      <h3>Challenges</h3>
+      <ul>
+        <li><strong>Handling partially matching or misspelled entries</strong></li>
+        <li><strong>Normalizing diverse formats (e.g., phone number styles)</strong></li>
+        <li><strong>Avoiding false positives during auto-merging</strong></li>
+        <li><strong>Maintaining data integrity and user confirmation</strong></li>
+        <li><strong>Scalability across millions of contacts/accounts</strong></li>
+      </ul>
+
+         <a href="https://github.com/AkshataSJ22/portfolio.github.io/blob/main/union-find.cpp" 
+   target="_blank" 
+   style="display: inline-block; padding: 10px 18px; background-color: #007bff; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; margin-bottom: 15px;">
+  View Code
+</a>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- gmail shopping range query -->
+
+<!-- Segment Tree Popup -->
+<div class="popup" id="popup-shopping">
+  <div class="popup-content" >
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <!-- Optional image if you have a diagram -->
+    <img src="https://iq.opengenus.org/content/images/2019/06/segment-tree.png" 
+         alt="Segment Tree Illustration" 
+         style="display: block; max-width: 100%; height: auto; border-radius: 8px; margin: 0 auto 10px;">
+
+    <div class="popup-text">
+      <h2 >Google Shopping – Range Queries using Segment Trees</h2>
+      <p>
+        In <strong>Google Shopping</strong>, users often apply price filters like “show products between ₹1000 and ₹5000” or “find the lowest price for this product across all sellers.” These kinds of queries fall under <strong>range queries</strong>, where the system needs to compute minimum or maximum values over a subarray of prices quickly. This is where the <strong>Segment Tree</strong> data structure is highly effective.
+      
+        A Segment Tree is a binary tree that stores information about intervals or segments of an array. Each node in the Segment Tree represents a segment of the array and stores the minimum (or maximum) value in that segment. With this, Google Shopping can answer <strong>range minimum/maximum queries in O(log n)</strong> time, where <em>n</em> is the number of products. This allows efficient filtering and price comparison across a dynamic inventory.
+      </p>
+      <p>
+        Additionally, if a product’s price changes frequently (due to discounts, stock updates, or seller pricing adjustments), Segment Trees are well-suited because they support <strong>efficient point updates in O(log n)</strong> time. This ensures that Google Shopping can quickly reflect the updated prices in real-time and still maintain accurate filtering and range query responses.
+        Moreover, if a user is viewing a product’s price trend over time (for example, historical low prices), the Segment Tree can be extended to store min/max for time-based intervals, making it suitable for <strong>temporal range analysis</strong> too. Overall, Segment Trees enable Google Shopping to provide a responsive and scalable user experience when dealing with vast product datasets and frequent price changes.
+      </p>
+
+      <h3 style="color: #0073e6;">Time Complexity</h3>
+      <ul>
+        <li><strong>Build Segment Tree:</strong> O(n)</li>
+        <li><strong>Range Query (min/max):</strong> O(log n)</li>
+        <li><strong>Point Update (price change):</strong> O(log n)</li>
+      </ul>
+
+      <h3 style="color: #0073e6;">Space Complexity</h3>
+      <ul>
+        <li><strong>Segment Tree Storage:</strong> O(2n) or O(4n) (depends on implementation)</li>
+      </ul>
+
+      <h3 style="color: #0073e6;">Challenges</h3>
+      <ul>
+        <li>Handling frequent dynamic updates in real-time</li>
+        <li>Scaling for millions of products and concurrent users</li>
+        <li>Memory overhead for storing multiple segment trees (e.g., per category or region)</li>
+        <li>Complexity increases when applying multiple filters (price + rating + brand)</li>
+        <li>Requires additional logic for merging query results with filters applied elsewhere</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- Google Cloud Load Balancing - Round Robin Popup -->
+<!-- Google Cloud Load Balancing - Round Robin Popup -->
+<div class="popup" id="popup-googlecloud">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <!-- Optional Image: Round Robin Distribution Visualization -->
+    <div style="display: flex; flex-direction: column;">
+      <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F529737ae-86d4-451f-aade-db1bc3411ec6_1000x600.gif" 
+           alt="Round Robin Load Balancing" 
+          >
+           
+      <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240130183429/Weighted-Round-Robin-(1).webp" 
+           alt="Weighted Round Robin" 
+           >
+    </div>
+
+    <div class="popup-text">
+      <h2>Google Cloud – Load Balancing</h2>
+      
+      <p>
+        In <strong>Google Cloud</strong>, load balancing is essential for directing user traffic efficiently across a global network of servers. It ensures <strong>high availability</strong>, <strong>low latency</strong>, and <strong>optimal resource usage</strong> by intelligently distributing incoming requests among backend instances in different regions or zones.
+      
+        Depending on the application type and performance needs, Google Cloud uses different strategies such as <em>latency-based routing</em>, <em>geolocation-based routing</em>, or <strong>simple rotation methods</strong> like <em>Round Robin</em>.
+      </p>
+
+      <p>
+        <strong>Round Robin</strong> is one of the most commonly used algorithms for distributing requests evenly. In this method, each server is selected in turn from a list of available backends — A → B → C → A → B → C — creating a predictable, fair rotation. It's ideal for scenarios where all servers are similarly configured and capable of handling equal loads.
+      
+        In Google Cloud's <strong>HTTP(S) Load Balancers</strong> or <strong>DNS load balancers</strong>, Round Robin is often employed for <em>stateless applications</em> like content delivery or microservices. It offers a simple and effective way to ensure no single server becomes a bottleneck.
+      </p>
+
+      <h3>Time Complexity</h3>
+      <ul>
+        <li><strong>Request Dispatch:</strong> O(1) per request</li>
+        <li><strong>Rotation Logic:</strong> Constant-time index update</li>
+      </ul>
+
+      <h3>Space Complexity</h3>
+      <ul>
+        <li>O(N) where N = number of backend servers</li>
+      </ul>
+
+      <h3>Challenges</h3>
+      <ul>
+        <li><strong>No load awareness:</strong> Cannot detect if a server is overloaded</li>
+        <li><strong>Equal weighting assumption:</strong> Assumes all servers perform identically</li>
+        <li><strong>Session stickiness:</strong> Additional techniques needed to maintain session state</li>
+        <li><strong>Not adaptive:</strong> Doesn't respond to real-time performance metrics</li>
+        <li><strong>Health dependency:</strong> Requires external health checks to remove failing servers</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- netork optimization -->
+     
+<!-- Google Cloud Network Design - Kruskal's Algorithm Popup -->
+<div class="popup" id="popup-kruskal">
+  <div class="popup-content" style="max-height: 90vh; overflow-y: auto;">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <!-- Optional Image: Replace with a relevant MST image or graph visualization -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/MST_kruskal_en.gif" 
+         alt="Minimum Spanning Tree in Google Cloud" 
+         style="display: block; max-width: 70%; height: auto; border-radius: 8px; margin: 0 auto 10px;">
+
+    <div class="popup-text">
+      <h2 >Google Cloud – Network Design Optimization</h2>
+      <p>
+        In <strong>Google Cloud's network design optimization</strong>, constructing a cost-effective and fully connected network between global data centers is crucial for ensuring <strong>high availability, performance, and reliability</strong>. This problem is modeled as a <strong>Minimum Spanning Tree (MST)</strong> problem, where each data center is a node, and the possible physical or virtual connections between them are edges weighted by cost.
+      </p>
+      <p>
+        <strong>Kruskal’s Algorithm</strong> is a classic approach for solving MST problems. It begins by treating each data center as an isolated component. All links (edges) are sorted in ascending order of cost (e.g., bandwidth, latency, deployment cost). Then, the smallest edge is picked and added to the network if it connects two different components—avoiding cycles using a <strong>Disjoint Set Union-Find</strong> structure. This process continues until all nodes are connected.
+      </p>
+
+      <h3 >Formula Used</h3>
+      <ul>
+        <li><strong>Total Network Cost:</strong> ∑ (weights of selected edges)</li>
+        <li><strong>Cycle Avoidance:</strong> Ensure <code>Find(u) ≠ Find(v)</code> before performing <code>Union(u, v)</code></li>
+      </ul>
+
+      <h3>Efficiencies of Kruskal’s Algorithm</h3>
+      <ul>
+        <li><strong>Time Complexity:</strong></li>
+        <ul>
+          <li>Sorting Edges: O(E log E)</li>
+          <li>Union-Find Operations: O(E α(V)) (α = inverse Ackermann function)</li>
+          <li><strong>Total:</strong> O(E log E)</li>
+        </ul>
+        <li><strong>Space Complexity:</strong></li>
+        <ul>
+          <li>Edge List: O(E)</li>
+          <li>Union-Find Structure: O(V)</li>
+          <li><strong>Total:</strong> O(E + V)</li>
+        </ul>
+      </ul>
+
+      <h3 >Challenges in Google Cloud Context</h3>
+      <ul>
+        <li><strong>Global Scale:</strong> Storing and maintaining edge info across continents is complex.</li>
+        <li><strong>Dynamic Changes:</strong> Recomputing MST from scratch when nodes change is inefficient.</li>
+        <li><strong>Latency vs. Cost Trade-off:</strong> Cheapest links may have high latency—hybrid heuristics are needed.</li>
+        <li><strong>Redundancy Needs:</strong> MST provides no cycles; fault tolerance demands extra redundant paths.</li>
+      </ul>
+
+      <a href="https://github.com/AkshataSJ22/portfolio.github.io/blob/main/Kruskal's.cpp" 
+         target="_blank" 
+         style="display: inline-block; padding: 10px 18px; background-color: #007bff; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; margin-bottom: 15px;">
+        View Code
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- excel sheet-dag -->
+<!-- Google Sheets DAG-Based Dependency Management Popup -->
+<div class="popup" id="popup-dag">
+  <div class="popup-content" style="max-height: 90vh; overflow-y: auto;">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <!-- Optional DAG Illustration -->
+    <img src="https://miro.medium.com/v2/resize:fit:1400/1*-YXaEv23d3urvp9tyeotbQ.gif"
+         alt="Google Sheets DAG Illustration"
+         style="display: block; max-width: 100%; height: auto; border-radius: 8px; margin: 0 auto 10px;">
+
+    <div class="popup-text">
+      <h2 >Google Sheets – Dependency Management using DAG</h2>
+      <p>
+        Google Sheets enables users to create dynamic spreadsheets using formulas that reference other cells—such as <code>=A1 + B1</code>. While straightforward in small sheets, large and interconnected spreadsheets introduce complex dependencies. Recalculating every formula upon each change would be inefficient and slow, especially across thousands of cells.
+      </p>
+      <p>
+        To optimize performance, Google Sheets uses a <strong>Directed Acyclic Graph (DAG)</strong>. Each cell is a node, and a directed edge connects cells based on dependency—for example, if <code>C1 = A1 + B1</code>, then edges are drawn from <code>C1 → A1</code> and <code>C1 → B1</code>. Because the graph is acyclic (has no loops), it avoids circular dependencies and ensures updates can be processed in a valid order.
+      </p>
+      <p>
+        When a user edits a cell like <code>A1</code>, Google Sheets efficiently consults the DAG to selectively recalculate only affected cells (like <code>C1</code>, <code>D5</code>, or <code>F10</code>), preserving both accuracy and speed.
+      </p>
+
+      <h3 >Efficiencies</h3>
+      <ul>
+        <li><strong>Time Complexity:</strong></li>
+        <ul>
+          <li><strong>Best Case:</strong> O(1) (if no dependent cells)</li>
+          <li><strong>Worst Case:</strong> O(V + E)</li>
+          <li>V = number of formula cells</li>
+          <li>E = number of dependencies</li>
+        </ul>
+        <li><strong>Space Complexity:</strong> O(V + E) to store the DAG</li>
+      </ul>
+
+      <h3 > Challenges</h3>
+      <ul>
+        <li><strong>Circular reference detection:</strong> DAG ensures no loops exist, or recalculation would be infinite.</li>
+        <li><strong>Efficient topological sorting:</strong> Ensures correct evaluation order of dependent cells.</li>
+        <li><strong>Memory overhead:</strong> DAG size grows with complex sheets.</li>
+        <li><strong>Partial recalculation:</strong> Must identify and update only affected cells efficiently.</li>
+        <li><strong>Real-time performance:</strong> Updates should feel instant as users type or paste data.</li>
+        <li><strong>Dynamic structure:</strong> Graph must be continuously updated as users edit formulas.</li>
+      </ul>
+
+      <h3> Reference</h3>
+      <ul>
+        <li>
+          <a href="https://hazelcast.com/foundations/distributed-computing/directed-acyclic-graph/" target="_blank">
+            DAG
+          </a>
+        </li>
+        <li>
+          <a href="https://www.geeksforgeeks.org/directed-acyclic-graph-in-compiler-design-with-examples/" target="_blank">
+            Google Workspace Developer Docs
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- google cdn-ford fulkerson -->
+<!-- Google CDN Load Balancing - Ford-Fulkerson Popup -->
+<div class="popup" id="popup-googlecdn">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <!-- Flow Network Visualization -->
+    
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/FordFulkersonDemo.gif" 
+     alt="Ford-Fulkerson Flow Network"
+     style="max-width: 100%; height: auto; display: block; margin: 10px auto; object-fit: contain;">
+
+
+     
+    <div class="popup-text">
+      <h2>Google CDN – Maximizing Video Flow with Ford-Fulkerson</h2>
+      
+      <p>
+        Google can model its <strong>Content Delivery Network (CDN)</strong> — responsible for routing and delivering videos from origin servers to end-users — as a flow network. 
+        In this network:
+        <ul>
+          <li><strong>Source nodes</strong>: Represent origin servers (e.g., YouTube’s data centers)</li>
+          <li><strong>Sink nodes</strong>: Represent edge servers near users (India, U.S., Europe, etc.)</li>
+          <li><strong>Edges</strong>: Represent network paths like optical fiber or backbone connections, each with a limited bandwidth capacity</li>
+          <li><strong>Flow</strong>: Denotes the video data (e.g., in Mbps/Gbps) being streamed through the network</li>
+        </ul>
+      </p>
+
+      <p>
+        To ensure smooth and uninterrupted delivery of live video content — such as major concerts, sports finals, or large-scale webinars — Google needs to <strong>maximize the throughput</strong> across this network. 
+        This is where the <strong>Ford-Fulkerson algorithm</strong> comes into play.
+      </p>
+
+      <p>
+        Ford-Fulkerson treats this network as a graph and iteratively finds augmenting paths from source to sink, pushing as much data as possible through those paths without violating bandwidth constraints.
+        The process continues until there are no more paths that can carry additional flow, ultimately determining the <strong>maximum flow</strong> that can be supported concurrently.
+      
+        In practice, Google may utilize faster variants like <strong>Edmonds-Karp</strong> (BFS-based) or <strong>Dinic’s Algorithm</strong> to handle large-scale, real-time traffic changes, ensuring optimal CDN performance during high-demand events.
+      </p>
+
+      <h3 >Time Complexity</h3>
+      <ul>
+        <li><strong>Ford-Fulkerson:</strong> O(E × max_flow)</li>
+        <li><strong>E:</strong> Number of edges in the network</li>
+        <li><strong>max_flow:</strong> Total maximum data that can be streamed</li>
+      </ul>
+
+      <h3>Space Complexity</h3>
+      <ul>
+        <li>O(V + E), where V is the number of servers/nodes</li>
+      </ul>
+
+      <h3 >Challenges in Google CDN Optimization</h3>
+      <ul>
+        <li><strong>Bandwidth Variability:</strong> Real-world links may change speeds due to congestion or outages</li>
+        <li><strong>Scalability:</strong> Huge number of users and paths (millions of nodes)</li>
+        <li><strong>Latency Sensitivity:</strong> Streaming must remain smooth with low buffering</li>
+        <li><strong>Dynamic Routing:</strong> Requires quick recalculations during network failures</li>
+        <li><strong>Non-integer Flows:</strong> Ford-Fulkerson assumes integer flow; fractional data requires extra handling</li>
+      </ul>
+
+      <a href="https://github.com/AkshataSJ22/portfolio.github.io/blob/main/ford-fulkerson.cpp" 
+   target="_blank" 
+   style="display: inline-block; padding: 10px 18px; background-color: #007bff; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; margin-bottom: 15px;">
+  View Code
+</a>
+
+<h3> Reference</h3>
+      <ul>
+        <li>
+          <a href="https://cloud.google.com/cdn" target="_blank">
+            Google CDN
+          </a>
+        </li>
+        <li>
+          <a href="" target="_blank">
+            Google Workspace Developer Docs
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
+ 
+<!-- google cloud resource allocation knap sack -->
+ <div class="popup" id="popup-knapsack">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Knapsack_problem_dynamic_programming.gif" 
+     alt="Ford-Fulkerson Flow Network"
+     style="max-width: 100%; height: auto; display: block; margin: 10px auto; object-fit: contain;">
+
+    <div class="popup-text">
+      <h2>Resource Allocation in Cloud Computing Using Knapsack Problem</h2>
+      <p>
+        Resource allocation in cloud computing involves intelligently distributing limited resources such as CPU, memory, and storage across multiple virtual machines and applications running at the same time. This process is vital because cloud providers aim to maximize the utilization of their hardware without sacrificing the performance of any user’s workload. When resources are underutilized, it results in wasted capacity and higher operational costs. Conversely, if resources are insufficient, applications may experience slowdowns or crashes, leading to poor user experiences. Balancing these competing needs is an ongoing challenge for cloud platforms like Google Cloud, which manage vast numbers of workloads continuously.
+      </p>
+      <p>
+        The knapsack problem provides a useful way to address this challenge. Here, each workload can be thought of as an “item” with a certain resource requirement (weight) and a value that reflects its importance or priority. The “knapsack” is the total resource capacity available on a physical server. By applying knapsack algorithms, the system can select the best combination of workloads to fit into the available resources, maximizing overall value without exceeding capacity. This approach allows cloud providers to optimize resource usage, ensuring critical applications get what they need while reducing wasted infrastructure, ultimately improving efficiency and cost-effectiveness.
+      </p>
+
+      <h3>Time Complexity</h3>
+      <ul>
+        <li><strong>Classic 0/1 Knapsack (Dynamic Programming):</strong> O(n * W), where <em>n</em> = number of workloads, <em>W</em> = total resource capacity (discretized)</li>
+      </ul>
+
+      <h3>Space Complexity</h3>
+      <ul>
+        <li>O(n * W) for the DP table, which can be optimized to O(W) using space-efficient techniques</li>
+      </ul>
+
+      <h3>Challenges</h3>
+      <ul>
+        <li><strong>Scalability:</strong> Large resource capacities and workload counts make exact DP solutions computationally expensive.</li>
+        <li><strong>Multiple Resource Dimensions:</strong> Cloud resources involve multiple constraints (CPU, RAM, bandwidth), turning the problem into a more complex multi-dimensional knapsack.</li>
+        <li><strong>Dynamic Workloads:</strong> Workloads arrive and finish continuously, requiring frequent re-optimization.</li>
+        <li><strong>Approximation Needed:</strong> Exact solutions are often impractical; heuristics or approximation algorithms are used to find near-optimal solutions quickly.</li>
+        <li><strong>Heterogeneous Resource Requirements:</strong> Workloads vary widely and unpredictably in resource usage, complicating modeling.</li>
+      </ul>
+
+      <a href="https://github.com/AkshataSJ22/portfolio.github.io/blob/main/knapsack.cpp" 
+         target="_blank" 
+         style="display: inline-block; padding: 10px 18px; background-color: #007bff; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; margin-bottom: 15px;">
+        View Code
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- google ranking and analysis -->
+<div class="popup" id="popup-ranking" >
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <!-- Optional Image -->
+    <img src="https://miro.medium.com/v2/resize:fit:1102/0*7u3_MN3yUyVKX6Z3.gif"
+         alt="Real-Time Ranking Visualization"
+         style="display: block; max-width: 70%; height: auto; border-radius: 8px; margin: 0 auto 10px;">
+
+    <div class="popup-text">
+      <h2>Google – Real-Time Analytics & Ranking</h2>
+      <p>
+        At Google scale, platforms like <strong>YouTube</strong>, <strong>Google Play Store</strong>, or <strong>Google News</strong> handle <strong>billions of user interactions</strong> (views, downloads, likes, comments) per day.
+        To display <strong>up-to-date rankings</strong>—such as trending videos, top apps, or most-read articles—Google must process a constant stream of updates while enabling <strong>fast queries for cumulative statistics</strong>.
+      </p>
+
+      <p>
+        The <strong>Fenwick Tree (Binary Indexed Tree)</strong> helps in tracking and aggregating rapidly changing metrics like views or downloads.
+        For example, YouTube may want to monitor views received in the last 60 minutes in 1-minute intervals. By mapping each minute to an index in the tree, it can perform <strong>O(log n)</strong> updates and prefix sum queries efficiently.
+      </p>
+
+      <p>
+        To maintain a <strong>top-K leaderboard</strong>, a <strong>Priority Queue (Min-Heap)</strong> is used. It stores the top trending items based on a composite hotness score (views, likes, comments).
+        As new data arrives, less popular items are evicted and new candidates are inserted in <strong>O(log k)</strong> time, avoiding full dataset scans.
+      </p>
+
+      <h3>Time & Space Complexity</h3>
+      <ul>
+        <li><strong>Update View Count:</strong> Fenwick Tree – O(log n), Space: O(n)</li>
+        <li><strong>Top-K Ranking:</strong> Priority Queue – O(log k), Space: O(k)</li>
+        <li><strong>ID Indexing:</strong> Hash Map – O(1) avg., Space: O(n)</li>
+        <li><strong>Sliding Window:</strong> O(1) per event, Space: O(k)</li>
+      </ul>
+
+      <h3>Key Challenges</h3>
+      <ul>
+        <li>Mapping dynamic content IDs to tree indices (via Hash Map)</li>
+        <li>Sliding window expiration is non-trivial in Fenwick Tree</li>
+        <li>Combining multiple metrics into one "hotness score"</li>
+        <li>Scaling across billions of updates in real time</li>
+      </ul>
+
+        <a href="https://github.com/AkshataSJ22/portfolio.github.io/blob/main/fenwick-tree.cpp" 
+   target="_blank" 
+   style="display: inline-block; padding: 10px 18px; background-color: #007bff; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; margin-bottom: 15px;">
+  View Code
+</a>
+    </div>
+  </div>
+</div>
+
+<!-- google playstore build & deployment popup -->
+<div class="popup" id="popup-build-pipeline">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+    <!-- Optional Image -->
+    <img src="https://inginious.org/course/competitive-programming/graphs-toposort/anim2.gif"
+         alt="Build Pipeline Visualization"
+         style="display: block; max-width: 70%; height: auto; border-radius: 8px; margin: 0 auto 10px;">
+
+    <div class="popup-text">
+      <h2>Google Play Store – App Build & Deployment Pipeline</h2>
+<p>
+    Large-scale Android apps like <strong>YouTube</strong>, <strong>Gmail</strong>, or <strong>Google Maps</strong> are composed of dozens or even hundreds of interdependent modules—such as UI components, network layers, analytics, and feature-specific services. Managing the build and deployment of these modules is a complex task that must ensure all dependencies are resolved in the correct sequence to prevent <strong>compilation errors, runtime crashes</strong>, or inconsistent application behavior.
+  
+    This process is modeled using a <strong>Directed Acyclic Graph (DAG)</strong>, where each node represents a module, and a directed edge from module A to B means A must be compiled before B. Google uses <strong>Topological Sorting</strong> to determine the correct sequence of builds across this dependency graph. Tools like <strong>Kahn’s Algorithm</strong> or <strong>DFS-based sort</strong> are used to compute a safe and efficient build order.
+  </p>
+
+  <p>
+    Moreover, this topological structure is leveraged by modern build systems like <strong>Gradle</strong>, which not only ensure proper module resolution but also <strong>optimize for parallelism</strong>—building independent modules simultaneously. This greatly reduces total build time and supports <strong>incremental builds</strong>, where only changed modules and their dependents are rebuilt.
+  </p>
+
+  <p>
+    In CI/CD pipelines, this topological intelligence helps automate testing, packaging, and release. Build artifacts are validated in isolation and then deployed to internal, alpha, or beta tracks on the Google Play Store using tools like <strong>Fastlane</strong> or <strong>Google Play Developer API</strong>. This ensures faster feature rollout, quicker bug fixes, and seamless delivery at planetary scale.
+
+    Through this automated and dependency-aware build process, Google achieves <strong>high developer velocity</strong>, reduced manual errors, and consistent app quality across millions of devices globally. These systems are essential for maintaining the agility and scalability required to support apps that serve billions of users.
+  </p>
+
+  <h3>Time & Space Complexity</h3>
+  <ul>
+    <li><strong>Topological Sort:</strong> O(V + E), Space: O(V)</li>
+    <li><strong>Cycle Detection:</strong> O(V + E), Space: O(V)</li>
+    <li><strong>Parallel Build Scheduling:</strong> Depends on cores/threads available</li>
+  </ul>
+
+  <h3>Key Challenges</h3>
+  <ul>
+    <li>Resolving cyclic dependencies in modules</li>
+    <li>Managing optional or dynamic dependencies</li>
+    <li>Optimizing for incremental builds</li>
+    <li>Scaling CI/CD across multiple app variants</li>
+  </ul>
+
+  <a href="https://github.com/AkshataSJ22/portfolio.github.io/blob/main/topological-sort.cpp"
+     target="_blank"
+     style="display: inline-block; padding: 10px 18px;background-color: #007bff; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; margin-bottom: 15px;">
+    View Code
+  </a>
+    </div>
+  </div>
+</div>
+
+
+<div class="popup" id="popup-tcs">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">×</span>
+
+       <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 0 10px;">
+      <img 
+        src="https://raw.githubusercontent.com/GuintherKovalski/Travelling-Salesman-Problem/master/ezgif-2-af435651c0bb.gif"
+        alt="TSP Visualization"
+        style="width: 90%; max-width: 500px; height: auto; border-radius: 8px;">
+
+      <img 
+        src="https://cdn-images-1.medium.com/max/2092/1*_WRGVfUoTjEmnQ_K9X8u_g.jpeg"
+        alt="Uniform Cost Search"
+        style="width: 90%; max-width: 500px; height: auto; border-radius: 8px;">
+    </div>
+    <div class="popup-text">
+      <h2>Google Shopping – Multi-Warehouse Order Fulfillment</h2>
+<p>
+    In the realm of e-commerce logistics, especially at Google Shopping scale, customer orders often need to be fulfilled by combining inventories from <strong>multiple geographically distributed warehouses</strong>. Each order must be matched against real-time inventory levels, warehouse capacity, and proximity to the delivery address, making the fulfillment problem both a <strong>routing and optimization challenge</strong>.
+  
+    To determine the most cost-effective and timely delivery route, Google applies the <strong>Travelling Salesperson Problem (TSP)</strong>—a classic algorithmic problem aimed at finding the shortest path that visits a set of locations (warehouses) and returns to the starting point. Although exact solutions to TSP are <strong>NP-Hard</strong>, real-world systems use <strong>heuristics like Nearest Neighbor, Genetic Algorithms</strong>, or the <strong>Held-Karp dynamic programming approach</strong> for near-optimal solutions that scale well.
+  </p>
+
+  <p>
+    Once the sequence of warehouse visits is optimized, <strong>Uniform Cost Search (UCS)</strong> is employed to determine the most efficient path between each pair of locations. UCS is ideal for such weighted graphs where edge costs can represent traffic conditions, tolls, priority shipping costs, or weather disruptions. It ensures that the lowest cumulative cost path is selected between nodes.
+  
+    These algorithms are further enhanced by <strong>real-time data streams</strong>—like inventory updates, shipping delays, and customer location changes. Google integrates predictive models and dynamic adjustments that re-run the TSP heuristics or update UCS decisions on the fly to account for changing ground realities.
+  </p>
+
+  <p>
+    The combination of <strong>TSP and UCS</strong> enables Google to deliver with <strong>high precision and minimal cost</strong>, even in complex scenarios like split fulfillment, last-mile delivery, or expedited same-day shipping. This not only enhances operational efficiency but also boosts customer trust through timely and transparent deliveries.
+  </p>
+
+  <h3>Time & Space Complexity</h3>
+  <ul>
+    <li><strong>TSP (Brute Force):</strong> O(n!), Space: O(n)</li>
+    <li><strong>TSP (Held-Karp):</strong> O(n²·2ⁿ), Space: O(n·2ⁿ)</li>
+    <li><strong>UCS (Priority Queue):</strong> O(E + V log V), Space: O(V)</li>
+  </ul>
+
+  <h3>Key Challenges</h3>
+  <ul>
+    <li>Scalability with growing number of warehouses</li>
+    <li>Real-time updates due to traffic, weather, or inventory changes</li>
+    <li>Handling split shipments across multiple hubs</li>
+    <li>Minimizing carbon footprint and optimizing delivery clusters</li>
+  </ul>
+
+  <a href="https://github.com/AkshataSJ22/portfolio.github.io/blob/main/ucs-tsp.cpp"
+     target="_blank"
+     style="display: inline-block; padding: 10px 18px; background-color: #007bff; color: white; border-radius: 6px; text-decoration: none; font-weight: bold; margin-bottom: 15px;">
+    View Code
+  </a>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
   </section>
+
+
+  <!-- summary -table -->
+<!-- summary -table -->
+
+<section id="summary" class="section">
+  <div class="summary-box">
+    <h1>Summary</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Use Case</th>
+          <th>Algorithm / Data Structure </th>
+          <th>Supporting Structures</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Google CDN – Maximizing Video Flow</td><td><strong>Ford-Fulkerson</strong> – For finding max-flow between servers to optimize video delivery across global CDNs.</td><td>Adjacency List, Queue</td></tr>
+        <tr><td>2</td><td>Google Maps – Route Finding</td><td><strong>Dijkstra’s, A*</strong> – Finds shortest or fastest paths with traffic weights; A* adds heuristics.</td><td>Priority Queue (Min-Heap), Hash Map</td></tr>
+        <tr><td>3</td><td>YouTube – Video Recommendations</td><td><strong>BFS</strong> – Explores video-user graph to recommend similar watched content.</td><td>Queue, Adjacency List</td></tr>
+        <tr><td>4</td><td>Google – Real-Time Analytics & Ranking</td><td><strong>Fenwick Tree, Priority Queue</strong> – For maintaining top-K trending queries/content in real-time.</td><td>Sliding Window, Hash Map</td></tr>
+        <tr><td>5</td><td>YouTube – Watch History</td><td><strong>Hashing</strong> – Quick storing and retrieval of watched videos by user.</td><td>Hash Table, Array List</td></tr>
+        <tr><td>6</td><td>YouTube – Recent Activity Tracker</td><td><strong>Sliding Window</strong> – Tracks latest interactions in a time-bounded view.</td><td>Queue, Timestamp Map</td></tr>
+        <tr><td>7</td><td>Gmail – Spam Filtering</td><td><strong>Bloom Filter</strong> – Probabilistic space-efficient spam signature checks.</td><td>Bit Array, Multiple Hash Functions</td></tr>
+        <tr><td>8</td><td>Gmail – Autocomplete</td><td><strong>Trie</strong> – Fast prefix lookups for email address or keyword suggestions.</td><td>Hash Map (Child Links)</td></tr>
+        <tr><td>9</td><td>Google Ads – Ad Assignment</td><td><strong>Hungarian Algorithm</strong> – Matches ads to slots for revenue maximization.</td><td>Cost Matrix, BFS/DFS</td></tr>
+        <tr><td>10</td><td>Google Search – Ranking and Retrieval</td><td><strong>PageRank Algorithm</strong> – Ranks pages based on their backlinks and authority.</td><td>Graph, Matrix Multiplication</td></tr>
+        <tr><td>11</td><td>Google Photos – Duplicate Detection</td><td><strong>KD-Tree</strong> – Efficient image feature matching in multi-dimensional space.</td><td>Hashing, Euclidean Distance</td></tr>
+        <tr><td>12</td><td>Google Drive – File Storage & Access</td><td><strong>Tree + Hash</strong> – Hierarchical folders with fast file access via hash lookup.</td><td>Directory Tree, Hash Table</td></tr>
+        <tr><td>13</td><td>Google Translate – Language Translation</td><td><strong>Dynamic Programming</strong> – For optimal sequence alignment in phrase translation.</td><td>DP Table, Backtracking</td></tr>
+        <tr><td>14</td><td>Google Calendar – Smart Scheduling</td><td><strong>Interval Trees</strong> – Detects overlapping meetings efficiently.</td><td>Binary Search Tree, Sorted Arrays</td></tr>
+        <tr><td>15</td><td>Gmail – Thread Management</td><td><strong>Skip List</strong> – Allows fast insertion and lookup in email threads.</td><td>Linked List Layers</td></tr>
+        <tr><td>16</td><td>Google Ads – Phrase Match</td><td><strong>Boyer-Moore</strong> – Fast substring search in keyword advertising.</td><td>Bad Character Table, Suffix Array</td></tr>
+        <tr><td>17</td><td>Google Chrome – Tab Management</td><td><strong>Doubly Linked List</strong> – Allows forward/back navigation through open tabs.</td><td>List Nodes, Pointer Tracking</td></tr>
+        <tr><td>18</td><td>Google Contacts – Duplicate Detection</td><td><strong>Union-Find</strong> – Groups similar entries as single contact.</td><td>Disjoint Sets, Path Compression</td></tr>
+        <tr><td>19</td><td>Google Shopping – Filters</td><td><strong>Segment Tree</strong> – Allows efficient range queries and filters on prices/features.</td><td>Balanced Tree, Range Map</td></tr>
+        <tr><td>20</td><td>Google Cloud – Load Balancing</td><td><strong>Round Robin</strong> – Evenly distributes requests among servers.</td><td>Circular Queue</td></tr>
+        <tr><td>21</td><td>Google Cloud – Network Optimization</td><td><strong>Kruskal’s Algorithm</strong> – Builds minimal cost connections across nodes.</td><td>Disjoint Set, Sorted Edges</td></tr>
+        <tr><td>22</td><td>Google Sheets – Dependency Management</td><td><strong>DAG</strong> – Maintains formula dependencies without circular references.</td><td>Topological Sort, Graph</td></tr>
+        <tr><td>23</td><td>Cloud Resource Allocation</td><td><strong>Knapsack</strong> – Allocates memory/CPU based on maximum gain per resource.</td><td>DP Table, Greedy Sort</td></tr>
+        <tr>
+  <td style="padding: 12px;">24</td>
+  <td>Google Shopping/Delivery – Order Fulfillment with Multiple Warehouses</td>
+  <td>
+    <strong>TSP + UCS</strong> – TSP determines the optimal warehouse visit sequence. UCS finds the shortest or least-cost path between each pair. Together, they minimize overall delivery time and cost.
+    <br><br>
+    <strong>Enhancing Algorithms:</strong> A* Search (heuristic pathfinding), Greedy Approximation (TSP), Held-Karp DP (TSP), Graph Pruning.
+  </td>
+  <td>Adjacency List/Matrix, Priority Queue, Hash Map</td>
+</tr>
+
+<tr>
+  <td style="padding: 12px;">25</td>
+  <td>Google Play Store – App Build & Deployment Pipeline</td>
+  <td>
+    <strong>Topological Sort</strong> – Ensures modules with dependencies are built in the correct order. Prevents circular dependency issues and supports scalable CI/CD.
+    <br><br>
+    <strong>Enhancing Algorithms:</strong> Kahn’s Algorithm (BFS), DFS Topo Sort, Cycle Detection, SAT Solver for advanced resolution.
+  </td>
+  <td>Adjacency List, Stack, Queue, Visited Set</td>
+</tr>
+  
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="learning" class="section">
+  <div class="learning-box">
+    <h2>Learning</h2>
+     <p>
+    Diving into these real-world use cases really highlighted how different algorithms and data structures solve unique problems in powerful ways. Whether it’s using skip lists to manage Gmail threads efficiently, applying graphs and BFS for YouTube recommendations, or relying on DAGs to keep Google Sheets fast and accurate, each solution is carefully chosen to match the specific needs of the system. It was eye-opening to see how these concepts—often learned in theory—are actually put into action at scale. This exploration not only deepened my understanding of when and why to use certain techniques but also showed how thoughtful algorithm design can make everyday tools smarter, faster, and more reliable.
+  </p>
+
+  </div>
+ 
+</section>
 
   <!-- Contact Section -->
   <section id="contact" class="section">
@@ -351,10 +2038,36 @@
       </main>
   </section>
 
+
+   <section class="academic-section">
+  <div class="academic-container">
+    <h2><span class="icon">🎓</span> Academic Details</h2>
+    <div class="details-box">
+      <div class="left-column">
+        <p><span class="dot"></span> Name</p>
+        <p><span class="dot"></span> SRN (Student Roll Number)</p>
+        <p><span class="dot"></span> Course Name</p>
+        <p><span class="dot"></span> Course Code</p>
+        <p><span class="dot"></span> Course Instructor</p>
+        <p><span class="dot"></span> University</p>
+        <p><span class="dot"></span> Portfolio Topic/Domain</p>
+      </div>
+      <div class="right-column">
+        <p>Akshata Joshi</p>
+        <p>01FE22BCS190</p>
+        <p>Algorithmic Problem Solving</p>
+        <p>24ECSE309</p>
+        <p>Prakash Hegade</p>
+        <p>KLE Technological University</p>
+        <p><img src="data:image/jpeg;base64,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" alt="Amazon" class="amazon-logo"></p>
+      </div>
+    </div>
+  </div>
+</section>
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-row">
-      <span class="footer-text">© 2024 Akshata Joshi. All rights reserved.</span>
+      <span class="footer-text">© 2025 Akshata Joshi. All rights reserved.</span>
       <div class="social-icons">
         <a href="https://www.linkedin.com/in/akshata-joshi-71430b2b5" target="_blank">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
@@ -365,7 +2078,27 @@
       </div>
     </div>
   </footer>
+<script>
+ 
+  function openPopup(id) {
+    document.querySelectorAll('.popup').forEach(p => p.style.display = 'none');
+    const popup = document.getElementById('popup-' + id);
+    if (popup) popup.style.display = 'flex';
+  }
+  function closePopup() {
+    document.querySelectorAll('.popup').forEach(p => p.style.display = 'none');
+  }
+</script>
 
+
+
+
+
+<!-- rferences
+ 
+gmail thread management-https://developers.google.com/workspace/gmail/api/guides/threads
+-->
 </body>
 </html>
+
 
